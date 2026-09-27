@@ -11,9 +11,41 @@ Get **`sinag-installer.exe`** from the [latest release](https://github.com/chrys
 and run it. It installs for your Windows account only (no admin needed), and Sinag keeps itself
 up to date from this page afterwards.
 
-**You need:** Windows 10 or 11 (64-bit) and a Claude account (a Claude subscription or an
-Anthropic Console account). The first-start setup installs Claude Code for you if it's missing
-and signs you in.
+## How it works
+
+<p align="center">
+  <img src="docs/screenshots/running.png" width="330" alt="Sinag while the developer works: the PM's blueprint, then the developer's bubble saying what it is writing right now">
+  &nbsp;
+  <img src="docs/screenshots/conversation.png" width="330" alt="A finished run: the PM's report to you and the result, tests passed">
+</p>
+
+1. **Add a project folder** and describe what you want, in plain words. Paste screenshots if they help.
+2. **The PM** reads the project and writes a short blueprint; **the developer** builds it; **QA**
+   runs your tests (and browser tests for websites). Each agent says what it is doing at least
+   once a minute.
+3. **You get a report:** what was done, what needs you, and a screenshot of the result. Reply to
+   keep going, or start a new run.
+
+<p align="center">
+  <img src="docs/screenshots/home.png" width="330" alt="The projects home: each project with its last run">
+  &nbsp;
+  <img src="docs/screenshots/plan.png" width="330" alt="Settings, Plan: time left, what each plan includes, this PC's code and the key box">
+</p>
+
+*Screenshots of the Sinag window with a demo project.*
+
+## Requirements
+
+| What | Details |
+|---|---|
+| **Windows 10 or 11, 64-bit** | Installs for your account only, no admin rights. About 50 MB. |
+| **A Claude account** | A Claude Pro, Max, Team or Enterprise subscription, or an Anthropic Console account (API billing). The agents run on your account, so usage counts against it; each run has a spend limit you set. |
+| **Claude Code** | The first-start setup checks for it and installs it with Anthropic's official installer if it's missing, then signs you in. |
+| **Internet** | To reach Claude, and for Sinag's updates. |
+| **Node.js** *(web projects only)* | For QA's browser tests and their replay. Playwright is added to the project the first time, and you're asked before it installs. |
+
+Everything else ships inside Sinag: its own Python, and the Microsoft Edge WebView that Windows
+already has (the installer adds it if it's missing).
 
 ## Free trial
 
@@ -21,7 +53,11 @@ Sinag starts with a free trial: **one hour of use** (the clock runs only while S
 in use), **3 team runs**, **20 chat messages** and **2 projects** (which can't be removed during the
 trial). The clock and what is left show
 in the window and in **Settings → Plan**. When the trial ends, enter a subscription key there to
-keep going. Subscriptions are coming soon.
+keep going.
+
+**Buying more time:** send Chrys the code shown under **This PC's code** (Settings → Plan, or on the
+key screen) and you get a key for that PC, for a number of hours of use or days. Hours count only
+while Sinag is in use, and a new key adds its hours to what you have left.
 
 ## What Sinag does
 
@@ -56,13 +92,16 @@ keep going. Subscriptions are coming soon.
 
 **Watch it work.**
 - Open a live window per agent to follow what each one is doing.
+- At least once a minute each agent says what it is doing right now: the file it is writing, the
+  command it is running, or that it is thinking.
 - Several projects can run at the same time, each in its own tab.
 - The **Changes** view lists every file the team created or edited.
 - **Preview** opens your project's page inside Sinag.
 - **Watch replay** on QA's browser tests shows every step on desktop and phone, with a screenshot
   of each click. Turn on "Show the browser while QA's browser tests run" (Settings → Team & runs)
   to watch them live. Recording costs no tokens.
-- Copy any agent's message with one click.
+- Copy any agent's message with one click. With a subscription, the screenshots an agent looked
+  at open with a click too.
 
 **Built-in expertise.** Agents come with a curated, security-reviewed set of engineering and
 design skills (animation, UI/UX, design systems and more) they use when the task calls for it.
