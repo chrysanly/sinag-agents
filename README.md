@@ -62,11 +62,15 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 ## What Sinag does
 
 **You describe the work, the team delivers it.**
-- **PM** reads your project and writes a short blueprint.
-- **Developer** builds it in your project folder.
-- **Tester / QA** runs your project's own tests and, for websites and web apps, tests what was
-  built in a real browser at desktop and phone sizes (Playwright). If anything fails, QA writes a
-  bug report with screenshots and the developer fixes it, up to 4 attempts.
+- **PM** reads your project, asks you what it needs to know, and shows you the plan. Nothing is
+  built until you choose **Begin**; choose **Additional** to add something and the PM updates the
+  plan first.
+- **Developer**, a senior full-stack engineer, builds it in your project folder the way your stack
+  is meant to be written, and writes the unit tests and (for websites) the browser tests at
+  desktop and phone sizes.
+- **Tester / QA** only tests, never codes: it runs the tests for what changed and the code linked
+  to it, then the whole suite once. If anything fails, QA writes a bug report and the developer
+  fixes it, up to 4 attempts.
 - The run passes only when the tests pass — never on the model's word.
 - At the end the PM reports back: what was done, what needs you, and a screenshot of the result
   when the project has a page to show.
@@ -88,7 +92,8 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   **Plan only** (stop after the blueprint so you can review it).
 - A spend limit per run, and automatic stops for an agent or test that goes silent, protect your
   tokens.
-- The developer can only run install and test commands; everything else is refused.
+- The developer can only run install and test commands; everything else is refused. Risky
+  commands (deleting files, pushing code, downloading) always ask you first, in every mode.
 
 **Watch it work.**
 - Open a live window per agent to follow what each one is doing.
