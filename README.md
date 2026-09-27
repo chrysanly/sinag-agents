@@ -68,9 +68,15 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - **Developer**, a senior full-stack engineer, builds it in your project folder the way your stack
   is meant to be written, and writes the unit tests and (for websites) the browser tests at
   desktop and phone sizes.
+- **Task by task.** The PM splits the work into tasks; tasks that change the same files go
+  together. The developer builds them one after another while **QA** tests each finished one
+  straight away, so the two work at the same time.
 - **Tester / QA** only tests, never codes: it runs the tests for what changed and the code linked
-  to it, then the whole suite once. If anything fails, QA writes a bug report and the developer
-  fixes it, up to 4 attempts.
+  to it, and checks pages on desktop and phone for production-level UI/UX. A bug or a must-fix
+  opens a thread on that task, where QA and the developer sort it out (up to 3 rounds). Design
+  ideas that are nice-to-have come to you in the report instead.
+- When every task is done, the whole suite runs once, QA reports to the PM, and the PM sums it
+  up for you.
 - The run passes only when the tests pass — never on the model's word.
 - At the end the PM reports back: what was done, what needs you, and a screenshot of the result
   when the project has a page to show.
@@ -94,6 +100,9 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   tokens.
 - The developer can only run install and test commands; everything else is refused. Risky
   commands (deleting files, pushing code, downloading) always ask you first, in every mode.
+- **Your secrets stay secret.** Keys and passwords go in `.env`, never in the code. No agent can
+  read or change `.env` or key files, and Sinag checks every change for leaked keys before it is
+  tested.
 
 **Watch it work.**
 - Open a live window per agent to follow what each one is doing.
