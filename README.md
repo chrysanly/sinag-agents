@@ -39,6 +39,8 @@ keep going. Subscriptions are coming soon.
 - After a run, just type a follow-up ("make the button bigger", "I found a bug on mobile").
   Each agent picks up exactly where it left off.
 - Forgot something while the team is working? Type it anyway: it reaches their next turn.
+- **The team remembers your project.** After the first run the PM keeps a short project brief
+  (stack, layout, how to test), so later runs start working instead of re-reading everything.
 - **New run** starts clean whenever you want a fresh start. Past runs stay in the project history.
 - **Enter** sends, **Shift+Enter** adds a new line. Paste or drop screenshots (up to 10).
 
@@ -57,6 +59,10 @@ keep going. Subscriptions are coming soon.
 - Several projects can run at the same time, each in its own tab.
 - The **Changes** view lists every file the team created or edited.
 - **Preview** opens your project's page inside Sinag.
+- **Watch replay** on QA's browser tests shows every step on desktop and phone, with a screenshot
+  of each click. Turn on "Show the browser while QA's browser tests run" (Settings → Team & runs)
+  to watch them live. Recording costs no tokens.
+- Copy any agent's message with one click.
 
 **Built-in expertise.** Agents come with a curated, security-reviewed set of engineering and
 design skills (animation, UI/UX, design systems and more) they use when the task calls for it.
