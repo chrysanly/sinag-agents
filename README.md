@@ -62,9 +62,9 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 ## What Sinag does
 
 **You describe the work, the team delivers it.**
-- **PM** reads your project, asks you what it needs to know, and shows you the plan. Nothing is
-  built until you choose **Begin**; choose **Additional** to add something and the PM updates the
-  plan first.
+- **PM** reads your project, checks that the request is clear and sound, asks you first when
+  something isn't right (and says why), and shows you the plan. Nothing is built until you choose
+  **Begin**; choose **Additional** to add something and the PM updates the plan first.
 - **Developer**, a senior full-stack engineer, builds it in your project folder the way your stack
   is meant to be written, and writes the unit tests and (for websites) the browser tests at
   desktop and phone sizes.
@@ -81,6 +81,14 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - At the end the PM reports back: what was done, what needs you, and a screenshot of the result
   when the project has a page to show.
 
+**Talk to one agent without stopping the team.**
+- Type **@PM**, **@Dev** or **@QA** to open a side conversation with that agent. Only it answers,
+  it sees your screenshots, and the team keeps working. Reply in the thread to keep talking.
+- When the PM has a plan in the side conversation, one click sends it straight to the Developer
+  and QA, with no new planning round. If the team is busy, it goes into the **work queue** and
+  starts by itself when the current run is done.
+- The **work list** shows what is in progress, what's next, what's waiting and what's done.
+
 **Keep the conversation going.**
 - After a run, just type a follow-up ("make the button bigger", "I found a bug on mobile").
   Each agent picks up exactly where it left off.
@@ -88,7 +96,14 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - **The team remembers your project.** After the first run the PM keeps a short project brief
   (stack, layout, how to test), so later runs start working instead of re-reading everything.
 - **New run** starts clean whenever you want a fresh start. Past runs stay in the project history.
-- **Enter** sends, **Shift+Enter** adds a new line. Paste or drop screenshots (up to 10).
+- **A run stopped?** Whether it hit an error, you pressed Stop, or you ran out of credits,
+  **Continue where it left off** picks it up again: finished tasks stay done and only the rest
+  is built.
+- **History** lists every run with its date, result, cost, screenshots and side questions; click
+  one to reopen that conversation.
+- **Enter** sends, **Shift+Enter** adds a new line. Paste or drop screenshots (up to 10),
+  even while the team is working: they go with your message and the next PM or developer turn
+  looks at them.
 
 **You stay in control.**
 - Agents ask you questions and permission right in the window, or in a small popup in the
@@ -97,12 +112,22 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - Modes: **Ask me** (edits run, other commands ask you), **Ask for everything**, **Auto**, or
   **Plan only** (stop after the blueprint so you can review it).
 - A spend limit per run, and automatic stops for an agent or test that goes silent, protect your
-  tokens.
+  tokens. The **cost saver** gives each agent only the skills and model it needs, and you can set
+  the model and effort of each agent yourself (Settings → Team & runs).
 - The developer can only run install and test commands; everything else is refused. Risky
   commands (deleting files, pushing code, downloading) always ask you first, in every mode.
 - **Your secrets stay secret.** Keys and passwords go in `.env`, never in the code. No agent can
   read or change `.env` or key files, and Sinag checks every change for leaked keys before it is
   tested.
+
+**Two ways to see it.**
+- The compact floating window, or the **Desktop view**, a full workspace for laptops and PCs:
+  projects on the left, the three agents with their current work, live activity, a terminal
+  with every command and its output, the changed files with their diffs, a preview of your page
+  and the message box, all on one screen. Hide or minimise any panel. Switch at any time
+  (**Ctrl+Shift+D**); a running team is never interrupted.
+- Three looks (Sinag, Aurora, Paper), each in light and dark.
+- Shortcuts: **Ctrl+P** switch project, **Ctrl+Shift+P** commands, **Ctrl+K** write to the team.
 
 **Watch it work.**
 - Open a live window per agent to follow what each one is doing.
@@ -114,17 +139,24 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - **Watch replay** on QA's browser tests shows every step on desktop and phone, with a screenshot
   of each click. Turn on "Show the browser while QA's browser tests run" (Settings → Team & runs)
   to watch them live. Recording costs no tokens.
-- Copy any agent's message with one click. With a subscription, the screenshots an agent looked
-  at open with a click too.
+- Copy any agent's message, code block, link or command with one click. With a subscription, the
+  screenshots an agent looked at open with a click too.
+- Every action tells you what happened: a notice while it works, then done or the error.
 
 **Built-in expertise.** Agents come with a curated, security-reviewed set of engineering and
 design skills (animation, UI/UX, design systems and more) they use when the task calls for it.
 
+**With a subscription: GitHub.** Connect a project to GitHub, pull a branch (you choose which,
+and conflicting local changes are set aside safely) and push your work, never forced. No tokens
+are used.
+
 **Also in the box:**
 - **Chat with Claude**, separate from the team, that can read the open project but never change it.
 - Always-on-top window you can pin or unpin, maximise, or hide to the system tray while a team keeps working.
-- A PIN to open the app, light and dark themes, optional start with Windows.
-- Model, mode and effort choice (Settings → Team & runs).
+- A PIN to open the app (asked again after 24 hours, when you sign out, or with Lock now), optional
+  start with Windows.
+- The title bar shows which version you are running.
+- Model, mode and effort choice, including every current Claude model and version (Settings → Team & runs).
 
 ## Questions or access
 
