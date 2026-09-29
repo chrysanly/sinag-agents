@@ -14,25 +14,46 @@ up to date from this page afterwards.
 ## How it works
 
 <p align="center">
-  <img src="docs/screenshots/running.png" width="330" alt="Sinag while the developer works: the PM's blueprint, then the developer's bubble saying what it is writing right now">
-  &nbsp;
-  <img src="docs/screenshots/conversation.png" width="330" alt="A finished run: the PM's report to you and the result, tests passed">
+  <img src="docs/screenshots/desktop.png" width="820" alt="The Desktop view: projects on the left, the PM, Dev and QA cards with Pause and Message buttons, live activity, the terminal, changed files with a diff, and the work queue">
 </p>
 
 1. **Add a project folder** and describe what you want, in plain words. Paste screenshots if they help.
-2. **The PM** reads the project and writes a short blueprint; **the developer** builds it; **QA**
-   runs your tests (and browser tests for websites). Each agent says what it is doing at least
-   once a minute.
+2. **The PM** reads the project, plans it as tasks and waits for your **Begin**. **The developer**
+   builds the tasks one by one while **QA** tests each finished task (and checks pages on desktop
+   and phone). Each agent says what it is doing at least once a minute.
 3. **You get a report:** what was done, what needs you, and a screenshot of the result. Reply to
    keep going, or start a new run.
 
 <p align="center">
-  <img src="docs/screenshots/home.png" width="330" alt="The projects home: each project with its last run">
+  <img src="docs/screenshots/running.png" width="330" alt="A run in progress: task 1 passed, task 2 being built with the files the developer is writing, task 3 waiting">
   &nbsp;
-  <img src="docs/screenshots/plan.png" width="330" alt="Settings, Plan: time left, what each plan includes, this PC's code and the key box">
+  <img src="docs/screenshots/conversation.png" width="330" alt="A finished run: QA's report to the PM, the PM's report to you, delivered">
 </p>
 
-*Screenshots of the Sinag window with a demo project.*
+**Steer the team while it works.** Right-click an agent to message it, pause it or stop the
+testing. Every message shows whether it is waiting, being worked on or done. Type **@PM**, **@Dev**
+or **@QA** for a side conversation that never stops the run.
+
+<p align="center">
+  <img src="docs/screenshots/commands.png" width="330" alt="The right-click menu on the developer: Message Dev, Pause Dev, Pause the team, Stop the run; below, messages marked Done, Dev is on it and Waiting for QA">
+  &nbsp;
+  <img src="docs/screenshots/aside.png" width="330" alt="A side conversation with the PM: the question, the PM's two-task plan, and the button that adds it to the work queue">
+</p>
+
+**Every run, kept.** History lists each run with its result, cost, screenshots and side
+questions, and reopens any of them.
+
+<p align="center">
+  <img src="docs/screenshots/history.png" width="820" alt="Run history in the Desktop view: totals for runs, deliveries, side questions and spend, then each run with its status, time, screenshots and cost">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/home.png" width="330" alt="The projects home: each project with its last run">
+  &nbsp;
+  <img src="docs/screenshots/plan.png" width="330" alt="Settings, Plan: the free trial's time, runs, chats and projects, what each plan includes, this PC's code and the key box">
+</p>
+
+*Screenshots of Sinag 0.8.0 with a demo project and made-up data.*
 
 ## Requirements
 
@@ -87,7 +108,22 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - When the PM has a plan in the side conversation, one click sends it straight to the Developer
   and QA, with no new planning round. If the team is busy, it goes into the **work queue** and
   starts by itself when the current run is done.
-- The **work list** shows what is in progress, what's next, what's waiting and what's done.
+- The **work list** shows what is in progress, what's next, what's waiting and what's done,
+  including the queue and the messages you sent.
+
+**Command the running team.**
+- **Pause** or **Resume** one agent or the whole team. **Message** an agent from its card, from a
+  right-click on its card or its message, or from the Tasks tab ("the .env is updated, pull
+  first").
+- An **urgent** message stops the agent's current step, and it picks up again with your message
+  first.
+- Every message shows where it stands: **Waiting**, **on it**, **Done**. A message that wasn't
+  handled carries over into **Continue** or your next message.
+- **Stop testing** stops QA at once, even mid-test. Waiting messages still reach the developer
+  before the report, the PM tells you what QA didn't get to, and one click plans the next step with
+  the PM.
+- Change the model, mode, effort or an agent's own settings during a run: they apply from the
+  team's next step.
 
 **Keep the conversation going.**
 - After a run, just type a follow-up ("make the button bigger", "I found a bug on mobile").
@@ -111,8 +147,8 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   and warns you when a command can delete or download things.
 - Modes: **Ask me** (edits run, other commands ask you), **Ask for everything**, **Auto**, or
   **Plan only** (stop after the blueprint so you can review it).
-- A spend limit per run, and automatic stops for an agent or test that goes silent, protect your
-  tokens. The **cost saver** gives each agent only the skills and model it needs, and you can set
+- A spend limit per run (switch it off for no limit), and automatic stops for an agent or test
+  that goes silent, protect your tokens. The **cost saver** gives each agent only the skills and model it needs, and you can set
   the model and effort of each agent yourself (Settings → Team & runs).
 - The developer can only run install and test commands; everything else is refused. Risky
   commands (deleting files, pushing code, downloading) always ask you first, in every mode.
@@ -158,11 +194,37 @@ are used.
 - The title bar shows which version you are running.
 - Model, mode and effort choice, including every current Claude model and version (Settings → Team & runs).
 
+## Security and privacy
+
+- **Your code stays on your PC.** Sinag has no server, no tracking and no analytics. The agents
+  work through your own Claude Code and Claude account.
+- **Only genuine updates install.** Every update is signed, and Sinag refuses one that isn't.
+  Licence keys are signed with a separate key that never leaves Chrys's PC.
+- **Agents are fenced in.** The PM and QA can only read. The developer can only edit and run
+  install and test commands, and risky commands always ask you. No agent can read `.env` or key
+  files.
+- **Found a security problem?** Report it privately through the
+  [Security tab](https://github.com/chrysanly/sinag-agents/security) (**Report a
+  vulnerability**), not in a public issue.
+
+The details, including everything Sinag connects to, are in [SECURITY.md](SECURITY.md).
+
+## Licence
+
+Sinag is **proprietary software**: free to try, and used with a key after the trial. You may
+install and use it, and everything the agents make for you is yours. You may not copy, resell or
+share Sinag or its keys, or get around its checks. The full terms are in [LICENSE.md](LICENSE.md).
+
+Sinag is built on open-source software (Tauri, Rust libraries, Python, the Rive runtime and
+open-source agent skills), used under their own licences: see
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Claude and Claude Code are Anthropic's products.
+Sinag isn't made or endorsed by Anthropic.
+
 ## Questions or access
 
 Contact **Chrys** on GitHub: [github.com/chrysanly](https://github.com/chrysanly).
 
 ---
 
-© 2026 Chrys. The Sinag application is distributed from this repository as a compiled installer;
-its source code is not published here.
+© 2026 Chrys. All rights reserved. The Sinag application is distributed from this repository as a
+compiled installer; its source code is not published here.
