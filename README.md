@@ -71,8 +71,9 @@ already has (the installer adds it if it's missing).
 ## Free trial
 
 Sinag starts with a free trial: **one hour of use** (the clock runs only while Sinag is open and
-in use), **3 team runs**, **20 chat messages** and **2 projects** (which can't be removed during the
-trial). The clock and what is left show
+in use), **1 team run**, **10 chat messages** and **2 projects** (which can't be removed during the
+trial). The Desktop view, commanding the team (Pause, Message and the right-click menu), **@**
+side conversations and **/** commands come with a subscription. The clock and what is left show
 in the window and in **Settings → Plan**. When the trial ends, enter a subscription key there to
 keep going.
 
