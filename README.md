@@ -20,7 +20,8 @@ up to date from this page afterwards.
 1. **Add a project folder** and describe what you want, in plain words. Paste screenshots if they help.
 2. **The PM** reads the project, plans it as tasks and waits for your **Begin**. **The developer**
    builds the tasks one by one while **QA** tests each finished task (and checks pages on desktop
-   and phone). Each agent says what it is doing at least once a minute.
+   and phone). Each agent says what it is doing at least once a minute. They are called **Ray**
+   (PM), **Tala** (developer) and **Liwanag** (QA); rename them in **Settings → Team & runs**.
 3. **You get a report:** what was done, what needs you, and a screenshot of the result. Reply to
    keep going, or start a new run.
 
@@ -31,8 +32,9 @@ up to date from this page afterwards.
 </p>
 
 **Steer the team while it works.** Right-click an agent to message it, pause it or stop the
-testing. Every message shows whether it is waiting, being worked on or done. Type **@PM**, **@Dev**
-or **@QA** for a side conversation that never stops the run.
+testing. Every message shows whether it is waiting, being worked on or done. Type **@Ray**,
+**@Tala** or **@Liwanag** (or **@PM**, **@Dev**, **@QA**) for a side conversation that never stops
+the run.
 
 <p align="center">
   <img src="docs/screenshots/commands.png" width="330" alt="The right-click menu on the developer: Message Dev, Pause Dev, Pause the team, Stop the run; below, messages marked Done, Dev is on it and Waiting for QA">
@@ -104,8 +106,9 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   when the project has a page to show.
 
 **Talk to one agent without stopping the team.**
-- Type **@PM**, **@Dev** or **@QA** to open a side conversation with that agent. Only it answers,
-  it sees your screenshots, and the team keeps working. Reply in the thread to keep talking.
+- Type **@Ray**, **@Tala** or **@Liwanag** (or **@PM**, **@Dev**, **@QA**) to open a side
+  conversation with that agent. Only it answers, it sees your screenshots, and the team keeps
+  working. Reply in the thread to keep talking.
 - When the PM has a plan in the side conversation, one click sends it straight to the Developer
   and QA, with no new planning round. If the team is busy, it goes into the **work queue** and
   starts by itself when the current run is done.
