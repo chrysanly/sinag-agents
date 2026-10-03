@@ -88,10 +88,16 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 **You describe the work, the team delivers it.**
 - **PM** reads your project, checks that the request is clear and sound, asks you first when
   something isn't right (and says why), and shows you the plan. Nothing is built until you choose
-  **Begin**; choose **Additional** to add something and the PM updates the plan first.
+  **Begin**; choose **Additional** to add something and the PM updates the plan first, or
+  **Discard** to drop the plan without building anything. Tick **Skip tests for this run** when
+  you don't need tests this time.
 - **Developer**, a senior full-stack engineer, builds it in your project folder the way your stack
   is meant to be written, and writes the unit tests and (for websites) the browser tests at
-  desktop and phone sizes.
+  desktop and phone sizes. It runs the tests for its change, fixes what fails and runs them again
+  (up to 3 times) before handing over.
+- **UI work uses the design skills.** When the task touches the look of your app, the team uses its
+  UI/UX, design and animation skills and avoids generic "AI-made" defaults, and QA checks the
+  result against the same list.
 - **Task by task.** The PM splits the work into tasks; tasks that change the same files go
   together. The developer builds them one after another while **QA** tests each finished one
   straight away, so the two work at the same time.
@@ -109,6 +115,12 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - Type **@Ray**, **@Tala** or **@Liwanag** (or **@PM**, **@Dev**, **@QA**) to open a side
   conversation with that agent. Only it answers, it sees your screenshots, and the team keeps
   working. Reply in the thread to keep talking.
+- Side conversations have their own **Side chats** tab, so the run's conversation shows only the
+  run. Open one in a tab of its own, **Hide** it, or **Delete** it for good.
+- In a side conversation the **PM can write docs for you** (a summary of what was done, a README)
+  and **set up your project** (installing packages and similar setup commands). Each file and each
+  command asks for your OK first. App code stays with the developer, and the PM never touches
+  your `.env`: it writes `.env.example` and you fill in the values.
 - When the PM has a plan in the side conversation, one click sends it straight to the Developer
   and QA, with no new planning round. If the team is busy, it goes into the **work queue** and
   starts by itself when the current run is done.
@@ -144,6 +156,9 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - **Enter** sends, **Shift+Enter** adds a new line. Paste or drop screenshots (up to 10),
   even while the team is working: they go with your message and the next PM or developer turn
   looks at them.
+- Attach **documents** (PDF, Markdown, text, CSV, JSON) and **videos** (MP4, WebM, MOV) too, in the
+  chat and side conversations. Agents read documents; Claude can't watch video, so the agent gets
+  the file's details and tells you so.
 
 **You stay in control.**
 - Agents ask you questions and permission right in the window, or in a small popup in the
@@ -152,7 +167,8 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - Modes: **Ask me** (edits run, other commands ask you), **Ask for everything**, **Auto**, or
   **Plan only** (stop after the blueprint so you can review it).
 - A spend limit per run (switch it off for no limit), and automatic stops for an agent or test
-  that goes silent, protect your tokens. The **cost saver** gives each agent only the skills and model it needs, and you can set
+  that goes silent, protect your tokens. The **cost saver** gives each agent only the skills and model it needs, keeps the
+  PM's and developer's thinking at medium, and never re-runs tests that already passed. You can set
   the model and effort of each agent yourself (Settings → Team & runs).
 - The developer can only run install and test commands; everything else is refused. Risky
   commands (deleting files, pushing code, downloading) always ask you first, in every mode.
@@ -166,6 +182,10 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   with every command and its output, the changed files with their diffs, a preview of your page
   and the message box, all on one screen. Hide or minimise any panel. Switch at any time
   (**Ctrl+Shift+D**); a running team is never interrupted.
+- A clean header: **Pause** and **Stop** while the team runs, and everything else in one **⋯**
+  menu, grouped into Project and View.
+- A **Tests** tab shows every test the developer and QA run, live, with its output and whether it
+  passed. Turn it off with **Show test output** (Settings or the tab itself).
 - Three looks (Sinag, Aurora, Paper), each in light and dark.
 - Shortcuts: **Ctrl+P** switch project, **Ctrl+Shift+P** commands, **Ctrl+K** write to the team.
 
