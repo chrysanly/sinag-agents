@@ -228,6 +228,12 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 **Built-in expertise.** Agents come with a curated, security-reviewed set of engineering and
 design skills (animation, UI/UX, design systems and more) they use when the task calls for it.
 
+**With a subscription: Learn.** Switch to the Learn view (the button in the title bar, or
+Ctrl+Shift+L) and name what you want to learn. The PM plans a step-by-step path while you watch,
+each step with the idea, where it lives in a real project, a small task and questions to check
+yourself. Practise in a project of its own: ask the tester to check your work like a mentor, or
+let the team build a step and explain it. Your progress is kept, and you can add paths any time.
+
 **With a subscription: GitHub.** Connect a project to GitHub, pull a branch (you choose which,
 and conflicting local changes are set aside safely) and push your work, never forced. No tokens
 are used.

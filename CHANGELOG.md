@@ -2,6 +2,26 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.9.7
+
+### New
+- **Learn: step-by-step learning paths.** Press the Learn button in the title bar (or
+  Ctrl+Shift+L) and Sinag switches to a view made for learning. Name a topic, say React, pick your
+  level and, if you like, a goal: the PM plans a path from the first install to something real,
+  and you watch it appear module by module and step by step while it is written.
+- **Every step teaches.** Each one has the idea in plain words, where it lives in a real project,
+  a small task and questions to check yourself. Mark steps done and your progress is kept; add a
+  new path any time.
+- **Practise in a real project.** Give a path its own practice project, then on any step ask the
+  tester to **check your work** like a mentor (it never rewrites it for you), or **let the team
+  build it** and explain what you can learn from it. Nothing is sent until you press Send.
+  Learn comes with a subscription.
+
+### Improved
+- **More skills for the team:** a lean, careful way of working (investigate first, small
+  surgical fixes, safe refactors, reversible migrations, verify and stop), terse handoffs and
+  reviews, browser automation, and more design references.
+
 ## 0.9.6
 
 ### Fixed

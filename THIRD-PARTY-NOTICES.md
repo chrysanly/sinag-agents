@@ -31,8 +31,19 @@ from third parties:
 | brandkit, design-taste-frontend-v1, full-output-enforcement, gpt-taste, high-end-visual-design, image-to-code, imagegen-frontend-mobile, imagegen-frontend-web, industrial-brutalist-ui, minimalist-ui, redesign-existing-projects, stitch-design-taste | MIT, Copyright (c) 2026 Leonxlnx | [github.com/Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) |
 | frontend-design | Apache-2.0 | Anthropic's agent skills; licence file kept with the skill |
 | ui-styling | Apache-2.0 | claudekit; licence file kept with the skill |
+| caveman, cavecrew, caveman-commit, caveman-discover, caveman-evidence-review, caveman-explore, caveman-help, caveman-learn, caveman-manage, caveman-optimize, caveman-review, caveman-setup, caveman-stats, investigate-first, lean-build, migration, safe-refactor, surgical-patch, verify-and-stop | Apache-2.0, Copyright 2026 Julius Brussee (Caveman 3.2.0; `LICENSE` and `NOTICE` kept with each skill) | [github.com/juliusbrussee/caveman](https://github.com/juliusbrussee/caveman) |
+| playwright-cli | Apache-2.0, Copyright (c) Microsoft Corporation | [github.com/microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) |
+| autonomous-dev | MIT | [github.com/iging/agent-spec](https://github.com/iging/agent-spec) |
+| qa-hardening, software-architecture | MIT | [github.com/iging/sauron](https://github.com/iging/sauron) |
+| awesome-design-md | MIT | [github.com/VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) |
+| web-design-guidelines | MIT | [github.com/vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
+| deploying-to-cloud, inertia-react-development, infer-conventions, laravel-best-practices, tailwindcss-development, testing-best-practices | MIT, from Laravel Boost 2.9.1 | [github.com/laravel/boost](https://github.com/laravel/boost) |
 
 Every skill that came with a licence file keeps it in its folder in Sinag's install directory.
+
+**Caveman NOTICE:** Caveman, Copyright 2026 Julius Brussee. Before Caveman 3.0.0, the parts of its
+repository outside the Engine-linked runtime were licensed under the MIT License; contributions made
+to those parts before 3.0.0 remain available under it.
 
 ## Rust libraries
 
