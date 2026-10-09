@@ -86,6 +86,10 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 ## What Sinag does
 
 **You describe the work, the team delivers it.**
+- **Talk it through first.** When you press Run, the PM checks your project and tells you whether it
+  can be done here, what it understood, what each agent would do and what it needs from you. Reply
+  as many times as you like; the plan comes only when you choose **Write the plan**, or **Stop** to
+  end there. Turn it off in Settings → Team & runs (**Discuss with the PM before the plan**).
 - **PM** reads your project, checks that the request is clear and sound, asks you first when
   something isn't right (and says why), and shows you the plan. Nothing is built until you choose
   **Begin**; choose **Additional** to add something and the PM updates the plan first, or
@@ -98,6 +102,11 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - **UI work uses the design skills.** When the task touches the look of your app, the team uses its
   UI/UX, design and animation skills and avoids generic "AI-made" defaults, and QA checks the
   result against the same list.
+- **Engineering skills on every task.** The PM plans with architecture and feature-planning
+  skills, the developer builds test-first, debugs by root cause and proves the work before handing
+  over, and QA hunts edge cases and security holes (XSS, injection, secrets) on top of the tests.
+- **You see helper agents.** When an agent hands part of a job to a helper agent, the conversation
+  says what job it got and shows every step it takes.
 - **Task by task.** The PM splits the work into tasks; tasks that change the same files go
   together. The developer builds them one after another while **QA** tests each finished one
   straight away, so the two work at the same time.
@@ -227,6 +236,10 @@ are used.
 - **Agents are fenced in.** The PM and QA can only read. The developer can only edit and run
   install and test commands, and risky commands always ask you. No agent can read `.env` or key
   files.
+- **Web access is checked.** Reading a page or searching runs on its own. Anything harmful (running
+  downloaded code, sending your data or a login out, saving a downloaded file, connecting to another
+  computer) asks you first, saying what it is and what will happen if you allow it.
+- **Every change is checked for secrets and XSS** before QA tests it, without using tokens.
 - **Found a security problem?** Report it privately through the
   [Security tab](https://github.com/chrysanly/sinag-agents/security) (**Report a
   vulnerability**), not in a public issue.
