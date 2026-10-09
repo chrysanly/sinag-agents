@@ -2,6 +2,15 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.9.5
+
+### Fixed
+- **Talking it through with the PM reads as one conversation again.** When you discuss the task
+  or approve the plan, the PM's answer and your reply now stay together in **Run Conversations**:
+  you answer right under the PM's message, and your reply shows once as your message to the PM,
+  with your screenshots and what you chose. **Side Conversations** keeps only your @ and /ask chats
+  and the permissions agents ask for, with no copies of the discussion.
+
 ## 0.9.4
 
 ### New
