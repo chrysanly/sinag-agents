@@ -234,6 +234,11 @@ each step with the idea, where it lives in a real project, a small task and ques
 yourself. Practise in a project of its own: ask the tester to check your work like a mentor, or
 let the team build a step and explain it. Your progress is kept, and you can add paths any time.
 
+**With a subscription: themes and your own wallpaper.** Make Sinag a pirate adventure (**High
+Seas**: a real old sea chart, wanted-poster cards and pirate icons) or a spellbook (**Grimoire**: a
+medieval grimoire page, vellum cards with gold leaf and spellbook icons), or put any image from
+your PC behind frosted glass. Settings → General.
+
 **With a subscription: GitHub.** Connect a project to GitHub, pull a branch (you choose which,
 and conflicting local changes are set aside safely) and push your work, never forced. No tokens
 are used.

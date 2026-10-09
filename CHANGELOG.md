@@ -2,6 +2,25 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.9.8
+
+### New
+- **High Seas theme.** A pirate adventure from edge to edge: a real 16th-century sea chart full of
+  ships and sea monsters behind everything, a dotted route to a red X, wanted-poster cards in
+  parchment and ink, pirate-red buttons that press into the page, woodtype titles and pirate icons
+  (ship, ship's wheel, spyglass, bottle, log book, map, treasure chest, compass, anchor).
+- **Grimoire theme.** A world of spellbooks: a real medieval grimoire page behind everything inside
+  a gold magic circle, every card an open vellum page with gold-leaf corners, glowing clover-green
+  spell buttons, an anti-magic Stop, blackletter titles and spellbook icons.
+- **Your own wallpaper.** Put any image from your PC behind Sinag and dim it to taste. It stays on
+  your PC.
+- **Glass.** Frosted panels over the theme or your wallpaper. Choose Follow Windows, On or Off in
+  Settings → General.
+  The two themes and the wallpaper come with a subscription.
+
+### Fixed
+- A wallpaper now always shows, whatever theme is on and however small the window.
+
 ## 0.9.7
 
 ### New

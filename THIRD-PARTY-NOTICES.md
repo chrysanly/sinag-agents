@@ -13,6 +13,10 @@ not Sinag's, apply to those components.
 | SQLite (via rusqlite / libsqlite3-sys) | bundled | Public domain | [sqlite.org](https://www.sqlite.org/copyright.html) |
 | Rive web runtime (`@rive-app/canvas`) | 2.43.1 | MIT, Copyright (c) Rive | [github.com/rive-app/rive-wasm](https://github.com/rive-app/rive-wasm) |
 | Rust libraries | see the list below | MIT, Apache-2.0 and others | [crates.io](https://crates.io/) |
+| Rye typeface (High Seas theme titles), Copyright (c) 2011 Sorkin Type Co, Reserved Font Name "Rye" | 1.x | SIL Open Font License 1.1 · full text in `themes/Rye-OFL.txt` in Sinag's install folder | [fonts.google.com/specimen/Rye](https://fonts.google.com/specimen/Rye) |
+| *Carta Marina* by Olaus Magnus, 1539 (High Seas theme background, resized) | — | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Carta_Marina.jpeg) |
+| UnifrakturMaguntia typeface (Grimoire theme titles), Copyright (c) 2010 j. 'mach' wust, (c) 2009 Peter Wiegel, Reserved Font Name "UnifrakturMaguntia" | — | SIL Open Font License 1.1 · full text in `themes/UnifrakturMaguntia-OFL.txt` in Sinag's install folder | [fonts.google.com/specimen/UnifrakturMaguntia](https://fonts.google.com/specimen/UnifrakturMaguntia) |
+| *Codex Gigas*, folio 290r, early 13th century (Grimoire theme background) | — | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Codex_Gigas_fol_290r_Devil.jpg) |
 
 Sinag also uses these, which are **not** part of the installer:
 
