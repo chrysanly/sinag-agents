@@ -2,6 +2,13 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.9.6
+
+### Fixed
+- **The team's engineering skills are back.** 0.9.5 left out the skills the PM and the developer
+  use on every task (planning in small testable steps, software architecture and QA hardening).
+  They ship with Sinag again, so plans and code get that care on every run.
+
 ## 0.9.5
 
 ### Fixed
