@@ -32,14 +32,24 @@ gets security fixes. Sinag offers each update in Settings, and it installs only 
   | `github.com/chrysanly/sinag-agents` | Checking for and downloading signed updates. |
   | `claude.ai/install.ps1` | Only on first setup, and only if Claude Code is missing: Anthropic's official installer. |
   | GitHub, for a project you connect | Only when you press Pull or Push (subscription). |
+  | Web pages an agent looks up | Only when an agent reads docs or searches during a run. Harmful calls ask you first (see below). |
 
 ### The agents only get the permissions they need
 
 - The **PM** and **QA** can read the project but never change it: their tools are read-only in
   every mode.
-- The **developer** can edit files and run install and test commands. Any other command is
-  refused. Risky commands (deleting files, pushing code, downloading) always ask you first, in
-  every mode, including Auto.
+- The **developer** can edit files and run install, test and the project's own check commands
+  (lint, type-check, build). Any other command asks you. Risky commands (deleting files, pushing
+  code) always ask you first, in every mode, including Auto.
+- **Web and network calls are judged before they run, for every agent.** Reading a web page,
+  searching, or a plain download that only prints a page runs on its own. Anything harmful asks you
+  first and says what it is and what will happen if you allow it: running downloaded code, sending
+  your data, a login or a cookie to a site, saving a downloaded file, connecting to another
+  computer, an encoded command, installing a package straight from a URL, or an address that carries
+  data. This holds whatever a skill or a file in your project tells the agent to do.
+- Every change the developer makes is checked by Sinag itself, before QA tests it, for leaked keys
+  and for XSS (a visitor's input written into the page or run as code, cookies sent out, scripts
+  loaded over plain http).
 - Sinag never uses Claude Code's "skip all permission checks" mode.
 - **Secrets:** no agent can read or change `.env` files, private keys or certificates. The
   developer is told to keep every key and password in `.env` (git-ignored), and every change is

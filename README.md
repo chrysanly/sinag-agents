@@ -18,17 +18,21 @@ up to date from this page afterwards.
 </p>
 
 1. **Add a project folder** and describe what you want, in plain words. Paste screenshots if they help.
-2. **The PM** reads the project, plans it as tasks and waits for your **Begin**. **The developer**
-   builds the tasks one by one while **QA** tests each finished task (and checks pages on desktop
-   and phone). Each agent says what it is doing at least once a minute. They are called **Ray**
-   (PM), **Tala** (developer) and **Liwanag** (QA); rename them in **Settings → Team & runs**.
-3. **You get a report:** what was done, what needs you, and a screenshot of the result. Reply to
-   keep going, or start a new run.
+2. **You and the PM talk it through.** The PM checks your project, tells you whether it can be done
+   and what each agent would do, and asks whether QA should test it. What you agree is written down
+   and shown on the plan, which waits for your **Begin**.
+3. **The developer** builds the tasks one by one while **QA** tests each finished task (and checks
+   pages on desktop and phone). Each agent says what it is doing at least once a minute. They are
+   called **Ray** (PM), **Tala** (developer) and **Liwanag** (QA); rename them in
+   **Settings → Team & runs**.
+4. **You get a report** from whoever worked last: what was done, what was verified and what wasn't,
+   what needs you, and a screenshot of the result. Add another task to the same run from the box
+   under it, or start a new run.
 
 <p align="center">
   <img src="docs/screenshots/running.png" width="330" alt="A run in progress: task 1 passed, task 2 being built with the files the developer is writing, task 3 waiting">
   &nbsp;
-  <img src="docs/screenshots/conversation.png" width="330" alt="A finished run: QA's report to the PM, the PM's report to you, delivered">
+  <img src="docs/screenshots/conversation.png" width="330" alt="A finished run with its report, delivered">
 </p>
 
 **Steer the team while it works.** Right-click an agent to message it, pause it or stop the
@@ -90,6 +94,12 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   can be done here, what it understood, what each agent would do and what it needs from you. Reply
   as many times as you like; the plan comes only when you choose **Write the plan**, or **Stop** to
   end there. Turn it off in Settings → Team & runs (**Discuss with the PM before the plan**).
+- **What you agreed is kept.** The PM always asks whether QA should test it or it's dev work only,
+  and writes down what you agreed: what you want, must and must-not, how to tell it's done, and your
+  decisions. It sits at the top of the plan card so you can correct it, and the developer and QA
+  work from it.
+- **The right skills for each task.** The PM picks skills for every task (design, architecture,
+  programming principles, security, testing) and the plan card shows them.
 - **PM** reads your project, checks that the request is clear and sound, asks you first when
   something isn't right (and says why), and shows you the plan. Nothing is built until you choose
   **Begin**; choose **Additional** to add something and the PM updates the plan first, or
@@ -97,8 +107,8 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   you don't need tests this time.
 - **Developer**, a senior full-stack engineer, builds it in your project folder the way your stack
   is meant to be written, and writes the unit tests and (for websites) the browser tests at
-  desktop and phone sizes. It runs the tests for its change, fixes what fails and runs them again
-  (up to 3 times) before handing over.
+  desktop and phone sizes. It runs the tests for its change and your project's own checks (lint,
+  type-check, build), fixes what fails and runs them again (up to 3 times) before handing over.
 - **UI work uses the design skills.** When the task touches the look of your app, the team uses its
   UI/UX, design and animation skills and avoids generic "AI-made" defaults, and QA checks the
   result against the same list.
@@ -114,11 +124,13 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   to it, and checks pages on desktop and phone for production-level UI/UX. A bug or a must-fix
   opens a thread on that task, where QA and the developer sort it out (up to 3 rounds). Design
   ideas that are nice-to-have come to you in the report instead.
-- When every task is done, the whole suite runs once, QA reports to the PM, and the PM sums it
-  up for you.
+- When every task is done, the whole suite runs once.
 - The run passes only when the tests pass — never on the model's word.
-- At the end the PM reports back: what was done, what needs you, and a screenshot of the result
-  when the project has a page to show.
+- At the end, whoever worked last reports to you: QA on a tested run, the developer when it was
+  dev work only. The report says what was done, what was verified and what wasn't, what needs you,
+  and shows a screenshot of the result when the project has a page to show.
+- **One run, several rounds.** Under the report, **Add another task to this run** continues the same
+  conversation (talked through with the PM first), and History keeps it as one run.
 
 **Talk to one agent without stopping the team.**
 - Type **@Ray**, **@Tala** or **@Liwanag** (or **@PM**, **@Dev**, **@QA**) to open a side
@@ -179,8 +191,9 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   that goes silent, protect your tokens. The **cost saver** gives each agent only the skills and model it needs, keeps the
   PM's and developer's thinking at medium, and never re-runs tests that already passed. You can set
   the model and effort of each agent yourself (Settings → Team & runs).
-- The developer can only run install and test commands; everything else is refused. Risky
-  commands (deleting files, pushing code, downloading) always ask you first, in every mode.
+- The developer runs install, test and your project's own check commands on its own; anything else
+  asks you. Risky commands (deleting files, pushing code, running downloaded code, sending data out)
+  always ask you first, in every mode.
 - **Your secrets stay secret.** Keys and passwords go in `.env`, never in the code. No agent can
   read or change `.env` or key files, and Sinag checks every change for leaked keys before it is
   tested.
@@ -233,9 +246,9 @@ are used.
   work through your own Claude Code and Claude account.
 - **Only genuine updates install.** Every update is signed, and Sinag refuses one that isn't.
   Licence keys are signed with a separate key that never leaves Chrys's PC.
-- **Agents are fenced in.** The PM and QA can only read. The developer can only edit and run
-  install and test commands, and risky commands always ask you. No agent can read `.env` or key
-  files.
+- **Agents are fenced in.** The PM and QA can only read. The developer edits and runs install, test
+  and check commands; anything else, and every risky command, asks you. No agent can read `.env` or
+  key files.
 - **Web access is checked.** Reading a page or searching runs on its own. Anything harmful (running
   downloaded code, sending your data or a login out, saving a downloaded file, connecting to another
   computer) asks you first, saying what it is and what will happen if you allow it.
