@@ -1,7 +1,7 @@
 # Sinag, by Chrys
 
-**A small floating window that turns Claude Code into a three-person software team** — a
-Project Manager, a Developer and a Tester — working on your own project, on your own PC.
+**A small floating window that turns Claude Code into a software team** — a Project Manager, a
+Developer, a Tester and, with a subscription, a Designer — working on your own project, on your own PC.
 
 *Sinag* is Tagalog for "ray of light".
 
@@ -21,10 +21,11 @@ up to date from this page afterwards.
 2. **You and the PM talk it through.** The PM checks your project, tells you whether it can be done
    and what each agent would do, and asks whether QA should test it. What you agree is written down
    and shown on the plan, which waits for your **Begin**.
-3. **The developer** builds the tasks one by one while **QA** tests each finished task (and checks
-   pages on desktop and phone). Each agent says what it is doing at least once a minute. They are
-   called **Ray** (PM), **Tala** (developer) and **Liwanag** (QA); rename them in
-   **Settings → Team & runs**.
+3. **The developer** builds the tasks one by one while **QA** tests each finished task. With a
+   subscription, **the designer** first checks every task that changes what you see, on desktop and
+   phone, before QA tests it. Each agent says what it is doing at least once a minute. They are
+   called **Ray** (PM), **Tala** (developer), **Liwanag** (QA) and **Bahaghari** (designer); rename
+   them in **Settings → Team & runs**.
 4. **You get a report** from whoever worked last: what was done, what was verified and what wasn't,
    what needs you, and a screenshot of the result. Add another task to the same run from the box
    under it, or start a new run.
@@ -124,6 +125,10 @@ while Sinag is in use, and a new key adds its hours to what you have left.
   to it, and checks pages on desktop and phone for production-level UI/UX. A bug or a must-fix
   opens a thread on that task, where QA and the developer sort it out (up to 3 rounds). Design
   ideas that are nice-to-have come to you in the report instead.
+- **Designer** (with a subscription) only reviews, never codes: after the developer builds a task
+  that changes what you see, it looks at the running app on desktop and phone and checks layout,
+  type, colour, every state and the motion. What isn't right goes back to the developer (up to 3
+  rounds) before QA tests it. Its screenshots and verdicts are in the **Design** tab.
 - When every task is done, the whole suite runs once.
 - The run passes only when the tests pass — never on the model's word.
 - At the end, whoever worked last reports to you: QA on a tested run, the developer when it was

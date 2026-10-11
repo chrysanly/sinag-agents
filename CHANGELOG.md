@@ -2,6 +2,26 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.10.0
+
+### New
+- **Bahaghari, the designer.** A fourth member of the team. After Tala builds a task that changes
+  what you see, Bahaghari looks at the real app on desktop and phone and checks the look, the feel
+  and the motion: layout and spacing, type, colour and contrast, every state, animations and the
+  phone layout. What isn't right goes back to Tala to fix before QA tests it, so QA can focus on
+  whether everything works. With QA off, Bahaghari reports to you.
+- **The Design tab.** See every design review in the Desktop view: the verdict for each task and
+  round, what had to be fixed, ideas for you, and the screenshots Bahaghari judged. Open any of
+  them big. The reviews show in the conversation too.
+- **Sinag runs your app for the team.** For work on a web project, Sinag starts the project's own
+  dev server in the background, with no command window, tells the team its address and stops it
+  when the work is done. Open it yourself from the Design tab.
+  The designer comes with a subscription. Turn it on or off in Settings → Team & runs → Design
+  check, and rename it like the others.
+
+### Improved
+- The team names the designer in its plans: the PM marks which tasks change what you see.
+
 ## 0.9.9
 
 ### New
