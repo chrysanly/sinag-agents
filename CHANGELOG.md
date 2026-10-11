@@ -2,6 +2,41 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.9.9
+
+### New
+- **Luna, your mentor.** Learn now has a mentor of its own. Luna writes your learning paths and
+  sits in her own sidebar: ask her about a step, let her check your work, fix it or build it in your
+  practice project. She teaches at a senior level and never sends you off to read the docs. Her
+  notes stay with Learn and never reach the team.
+- **Choose where Sinag's AI comes from.** Settings → Usage: your Claude plan through Claude Code,
+  your own Anthropic API key, OpenCode Zen credits, or Free usage (Gemini, Groq, OpenRouter and
+  OpenCode's free models). Connect each once, switch whenever you like, and every option says
+  plainly whether it is free or paid. "How usage works" explains them all.
+- **No Claude login needed to open Sinag.** Your PIN opens it. Claude only asks you to sign in when
+  Claude Code is what you use.
+- **AI in use, always visible.** The account chip and Settings → Account show what Sinag runs on
+  now, with a switch. The chat, the team and Luna each show their connection, model and effort.
+- **Basic or Pro paths.** Pro covers a senior full-stack curriculum: standards, architecture,
+  security, performance, testing and delivery. Your goal is now binding: what you leave out stays out.
+- **Sinag and the team come alive.** New animated characters for Sinag, Luna, Ray, Tala and
+  Liwanag, and a new Sinag on the splash screen, the sign-in screen, the title bar and the app icon.
+
+### Improved
+- **Paths keep writing in the background.** Write several at once, keep using Sinag, and see them
+  appear even after a reload.
+- **Models follow your connection.** The model lists show the models of what you use, and effort
+  only appears where it applies.
+- **The chat is now Chat with Sinag.**
+- **Learn setup steps** include their full configuration, and the practice folder can be picked
+  when you start a path.
+
+### Fixed
+- **A usage limit no longer loses a path.** Luna pauses and continues from exactly where she
+  stopped, on any connection you choose.
+- Code in learning steps shows properly.
+- Toggles in Settings line up.
+
 ## 0.9.8
 
 ### New

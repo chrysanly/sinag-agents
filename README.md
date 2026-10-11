@@ -66,8 +66,8 @@ questions, and reopens any of them.
 | What | Details |
 |---|---|
 | **Windows 10 or 11, 64-bit** | Installs for your account only, no admin rights. About 50 MB. |
-| **A Claude account** | A Claude Pro, Max, Team or Enterprise subscription, or an Anthropic Console account (API billing). The agents run on your account, so usage counts against it; each run has a spend limit you set. |
-| **Claude Code** | The first-start setup checks for it and installs it with Anthropic's official installer if it's missing, then signs you in. |
+| **An AI to run on** | Your Claude plan (Pro, Max, Team or Enterprise), an Anthropic API key, OpenCode Zen credits, or Free usage (for Learn paths and Our Sinag). Connect each once in Settings → Usage and switch any time. Usage counts against that account; each run has a spend limit you set. |
+| **Claude Code** | The first-start setup checks for it and installs it with Anthropic's official installer if it's missing. Signing in to Claude is only needed when you run on your Claude plan. |
 | **Internet** | To reach Claude, and for Sinag's updates. |
 | **Node.js** *(web projects only)* | For QA's browser tests and their replay. Playwright is added to the project the first time, and you're asked before it installs. |
 
@@ -254,7 +254,9 @@ are used.
 ## Security and privacy
 
 - **Your code stays on your PC.** Sinag has no server, no tracking and no analytics. The agents
-  work through your own Claude Code and Claude account.
+  work through your own Claude Code and the connection you choose. Keys you add are encrypted on
+  your PC and never shown again. Free tiers may use what you send to improve their models, so keep
+  private work on a paid connection.
 - **Only genuine updates install.** Every update is signed, and Sinag refuses one that isn't.
   Licence keys are signed with a separate key that never leaves Chrys's PC.
 - **Agents are fenced in.** The PM and QA can only read. The developer edits and runs install, test
