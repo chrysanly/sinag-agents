@@ -1,6 +1,6 @@
 # Sinag, by Chrys
 
-**A small floating window that turns Claude Code into a software team** — a Project Manager, a
+**A small floating window that turns Claude Code into a software team** — Sinag leads it, with a
 Developer, a Tester and, with a subscription, a Designer — working on your own project, on your own PC.
 
 *Sinag* is Tagalog for "ray of light".
@@ -14,156 +14,188 @@ up to date from this page afterwards.
 ## How it works
 
 <p align="center">
-  <img src="docs/screenshots/desktop.png" width="820" alt="The Desktop view: projects on the left, the PM, Dev and QA cards with Pause and Message buttons, live activity, the terminal, changed files with a diff, and the work queue">
+  <img src="docs/screenshots/desktop.png" width="820" alt="The Desktop view during a run: the designer done, the developer writing a test, the tester running browser tests, live activity and the terminal with the test output">
 </p>
 
 1. **Add a project folder** and describe what you want, in plain words. Paste screenshots if they help.
-2. **You and the PM talk it through.** The PM checks your project, tells you whether it can be done
-   and what each agent would do, and asks whether QA should test it. What you agree is written down
-   and shown on the plan, which waits for your **Begin**.
-3. **The developer** builds the tasks one by one while **QA** tests each finished task. With a
-   subscription, **the designer** first checks every task that changes what you see, on desktop and
-   phone, before QA tests it. Each agent says what it is doing at least once a minute. They are
-   called **Ray** (PM), **Tala** (developer), **Liwanag** (QA) and **Bahaghari** (designer); rename
-   them in **Settings → Team & runs**.
-4. **You get a report** from whoever worked last: what was done, what was verified and what wasn't,
+2. **You and Sinag talk it through.** Sinag checks your project, tells you whether it can be done
+   and who would do what, and asks whether it should be tested. What you agree is written down and
+   shown on the plan, which waits for your **Begin**.
+3. **Small change? Sinag can do it herself.** When the plan is a few lines in one or two files, she
+   offers to make it herself and run the tests, with no other agent. One tick on the plan gives it
+   to the team instead.
+4. **The designer designs first** (with a subscription). For every task that changes what you see,
+   **Bahaghari** makes a real mockup of the screen, on desktop and phone. You **Approve** it or say
+   what to change, and open it live to try its hover and motion. Nothing is built before you approve.
+5. **The developer builds it, the tester tests it.** **Tala** builds each task to match the design;
+   Bahaghari checks the result looks like the mockup; **Liwanag** tests that it works, on desktop
+   and phone. Rename any of them in **Settings → Team & runs**.
+6. **You get a report** from whoever worked last: what was done, what was verified and what wasn't,
    what needs you, and a screenshot of the result. Add another task to the same run from the box
    under it, or start a new run.
 
 <p align="center">
-  <img src="docs/screenshots/running.png" width="330" alt="A run in progress: task 1 passed, task 2 being built with the files the developer is writing, task 3 waiting">
-  &nbsp;
-  <img src="docs/screenshots/conversation.png" width="330" alt="A finished run with its report, delivered">
+  <img src="docs/screenshots/ask-plan.png" width="820" alt="Sinag's plan card: what you agreed, the three tasks, Sinag does this herself, Skip tests for this run, and Discard, Additional and Begin">
 </p>
 
-**Steer the team while it works.** Right-click an agent to message it, pause it or stop the
-testing. Every message shows whether it is waiting, being worked on or done. Type **@Ray**,
-**@Tala** or **@Liwanag** (or **@PM**, **@Dev**, **@QA**) for a side conversation that never stops
-the run.
+<p align="center">
+  <img src="docs/screenshots/design-first.png" width="820" alt="Bahaghari's mockup of the order page on desktop and phone with its design notes, Open live, and the card to approve it or say what to change">
+</p>
 
 <p align="center">
-  <img src="docs/screenshots/commands.png" width="330" alt="The right-click menu on the developer: Message Dev, Pause Dev, Pause the team, Stop the run; below, messages marked Done, Dev is on it and Waiting for QA">
+  <img src="docs/screenshots/running.png" width="330" alt="A run in progress: task 1 passed, task 2 being built with the files the developer is writing">
   &nbsp;
-  <img src="docs/screenshots/aside.png" width="330" alt="A side conversation with the PM: the question, the PM's two-task plan, and the button that adds it to the work queue">
+  <img src="docs/screenshots/conversation.png" width="330" alt="A finished run with its report: done, verified, needs you, and the browser tests passed">
+</p>
+
+**Steer the team while it works** (with a subscription). Right-click an agent to message it, pause
+it or stop the run. Every message shows whether it is waiting, being worked on or done. Type
+**@Sinag**, **@Tala** or **@Liwanag** (or **@PM**, **@Dev**, **@QA**) for a side conversation that
+never stops the run.
+
+<p align="center">
+  <img src="docs/screenshots/commands.png" width="330" alt="The right-click menu on the developer: Message Tala, Pause Tala, Pause the team, Stop the run">
+  &nbsp;
+  <img src="docs/screenshots/aside.png" width="330" alt="A side conversation with Sinag: the question, her two-task answer, and the link that sends it to the team">
+</p>
+
+**Every design, kept.** The **Design** tab shows each mockup and each review of what was built,
+with the screenshots, and the app Sinag started for the designer.
+
+<p align="center">
+  <img src="docs/screenshots/design-tab.png" width="820" alt="The Design tab: the app running, the mockup with Open live, and the designer's review of the build, Looks right">
 </p>
 
 **Every run, kept.** History lists each run with its result, cost, screenshots and side
 questions, and reopens any of them.
 
 <p align="center">
-  <img src="docs/screenshots/history.png" width="820" alt="Run history in the Desktop view: totals for runs, deliveries, side questions and spend, then each run with its status, time, screenshots and cost">
+  <img src="docs/screenshots/history.png" width="820" alt="Run history: totals for runs, deliveries, side questions and spend, then each run with its status, time, screenshots and cost">
 </p>
 
 <p align="center">
   <img src="docs/screenshots/home.png" width="330" alt="The projects home: each project with its last run">
   &nbsp;
-  <img src="docs/screenshots/plan.png" width="330" alt="Settings, Plan: the free trial's time, runs, chats and projects, what each plan includes, this PC's code and the key box">
+  <img src="docs/screenshots/plan.png" width="330" alt="Settings, Plan on the free trial: the time, runs, chats and projects left, what a subscription adds, this PC's code and the key box">
 </p>
 
-*Screenshots of Sinag 0.8.0 with a demo project and made-up data.*
+*Screenshots of Sinag 0.11.0 with a demo project and made-up data.*
+
+## Free trial and subscription
+
+Sinag starts with a **free trial**. A **subscription key** lifts every limit and adds the rest.
+The clock and what is left show in the window and in **Settings → Plan**.
+
+| | Free trial | Subscription |
+|---|---|---|
+| **Time** | 1 hour of use (counted only while Sinag is open and in use) | As long as your key runs: a number of days, or hours of use |
+| **Team runs** | 1 | Unlimited |
+| **Chat messages** | 10 | Unlimited |
+| **Projects** | 2 (can't be removed during the trial) | Unlimited, and remove any |
+| **The team**: Sinag, the developer and the tester, talking it through, the plan, the report | ✓ | ✓ |
+| **Sinag makes small changes herself** | ✓ | ✓ |
+| **Tests, preview, browser-test replay, History, Chat** | ✓ | ✓ |
+| **Choose your AI**: your Claude plan, an API key, OpenCode Zen | ✓ | ✓ |
+| **Sinag, Aurora and Paper styles**, light and dark | ✓ | ✓ |
+| **The Desktop view** (full workspace) | | ✓ |
+| **The designer, Bahaghari**: mockups first, Open live, the Design tab | | ✓ |
+| **Steer the team**: Pause, Message, the right-click menu | | ✓ |
+| **@ side conversations** and **/ commands** | | ✓ |
+| **Open the agents' screenshots** | | ✓ |
+| **Learn with Luna**: learning paths with a mentor | | ✓ |
+| **High Seas and Grimoire styles**, and your own wallpaper | | ✓ |
+| **GitHub**: pull and push from Sinag | | ✓ |
+
+**Getting a key:** send Chrys the code shown under **This PC's code** (Settings → Plan, or on the
+key screen) and you get a key for that PC, for a number of days or hours of use. Hours count only
+while Sinag is in use, and a new key adds its hours to what you have left.
 
 ## Requirements
 
 | What | Details |
 |---|---|
 | **Windows 10 or 11, 64-bit** | Installs for your account only, no admin rights. About 50 MB. |
-| **An AI to run on** | Your Claude plan (Pro, Max, Team or Enterprise), an Anthropic API key, OpenCode Zen credits, or Free usage (for Learn paths and Our Sinag). Connect each once in Settings → Usage and switch any time. Usage counts against that account; each run has a spend limit you set. |
+| **An AI to run on** | Your Claude plan (Pro, Max, Team or Enterprise), an Anthropic API key, or OpenCode Zen credits; Free usage too, for Learn paths. Connect each once in Settings → Usage and switch any time. Usage counts against that account; each run has a spend limit you set. |
 | **Claude Code** | The first-start setup checks for it and installs it with Anthropic's official installer if it's missing. Signing in to Claude is only needed when you run on your Claude plan. |
-| **Internet** | To reach Claude, and for Sinag's updates. |
-| **Node.js** *(web projects only)* | For QA's browser tests and their replay. Playwright is added to the project the first time, and you're asked before it installs. |
+| **Internet** | To reach your AI, and for Sinag's updates. |
+| **Node.js** *(web projects only)* | For the tester's browser tests and their replay. Playwright is added to the project the first time, and you're asked before it installs. |
 
 Everything else ships inside Sinag: its own Python, and the Microsoft Edge WebView that Windows
 already has (the installer adds it if it's missing).
 
-## Free trial
-
-Sinag starts with a free trial: **one hour of use** (the clock runs only while Sinag is open and
-in use), **1 team run**, **10 chat messages** and **2 projects** (which can't be removed during the
-trial). The Desktop view, commanding the team (Pause, Message and the right-click menu), **@**
-side conversations and **/** commands come with a subscription. The clock and what is left show
-in the window and in **Settings → Plan**. When the trial ends, enter a subscription key there to
-keep going.
-
-**Buying more time:** send Chrys the code shown under **This PC's code** (Settings → Plan, or on the
-key screen) and you get a key for that PC, for a number of hours of use or days. Hours count only
-while Sinag is in use, and a new key adds its hours to what you have left.
-
 ## What Sinag does
 
 **You describe the work, the team delivers it.**
-- **Talk it through first.** When you press Run, the PM checks your project and tells you whether it
-  can be done here, what it understood, what each agent would do and what it needs from you. Reply
-  as many times as you like; the plan comes only when you choose **Write the plan**, or **Stop** to
+- **Talk it through first.** When you press Run, Sinag checks your project and tells you whether it
+  can be done here, what she understood, who would do what and what she needs from you. Reply as
+  many times as you like; the plan comes only when you choose **Write the plan**, or **Stop** to
   end there. Turn it off in Settings → Team & runs (**Discuss with the PM before the plan**).
-- **What you agreed is kept.** The PM always asks whether QA should test it or it's dev work only,
-  and writes down what you agreed: what you want, must and must-not, how to tell it's done, and your
-  decisions. It sits at the top of the plan card so you can correct it, and the developer and QA
-  work from it.
-- **The right skills for each task.** The PM picks skills for every task (design, architecture,
-  programming principles, security, testing) and the plan card shows them.
-- **PM** reads your project, checks that the request is clear and sound, asks you first when
-  something isn't right (and says why), and shows you the plan. Nothing is built until you choose
-  **Begin**; choose **Additional** to add something and the PM updates the plan first, or
-  **Discard** to drop the plan without building anything. Tick **Skip tests for this run** when
-  you don't need tests this time.
+- **What you agreed is kept.** Sinag always asks whether it should be tested or it's dev work only,
+  and writes down what you agreed: what you want, must and must-not, how to tell it's done, and
+  your decisions. It sits at the top of the plan card so you can correct it, and the team works
+  from it.
+- **The plan waits for you.** Nothing is built until you choose **Begin**; choose **Additional** to
+  add something and Sinag updates the plan first, or **Discard** to drop it. Tick **Skip tests for
+  this run** when you don't need tests this time.
+- **Sinag does small changes herself.** When a change is small (a few lines, nothing to design, low
+  risk) she offers to make it herself, with the developer's permissions for that change only, and
+  runs your tests; pass or fail is the test's own result. Untick **Sinag does this herself** and the
+  team does it.
+- **The designer designs first** (with a subscription). For a task that changes what you see,
+  Bahaghari makes a mockup of the finished screen in your project's own colours, fonts and
+  components, with its states and motion, and screenshots it on desktop and phone. **Open live**
+  opens the real mockup so you can hover, click and resize it. **Approve** it, or type what to
+  change (a screenshot helps) and press **Change it** for a new version. The developer builds to
+  the approved design, Bahaghari checks the result matches (up to 3 rounds), and only then is it
+  tested. Small visual tweaks don't need a mockup; Sinag can do those herself.
 - **Developer**, a senior full-stack engineer, builds it in your project folder the way your stack
   is meant to be written, and writes the unit tests and (for websites) the browser tests at
   desktop and phone sizes. It runs the tests for its change and your project's own checks (lint,
   type-check, build), fixes what fails and runs them again (up to 3 times) before handing over.
-- **UI work uses the design skills.** When the task touches the look of your app, the team uses its
-  UI/UX, design and animation skills and avoids generic "AI-made" defaults, and QA checks the
-  result against the same list.
-- **Engineering skills on every task.** The PM plans with architecture and feature-planning
-  skills, the developer builds test-first, debugs by root cause and proves the work before handing
-  over, and QA hunts edge cases and security holes (XSS, injection, secrets) on top of the tests.
+- **Tester** only tests, never codes: it runs the tests for what changed and the code linked to
+  it, and checks pages on desktop and phone. A bug opens a thread on that task, where the tester
+  and the developer sort it out (up to 3 rounds). Nice-to-have ideas come to you in the report.
+- **Task by task.** Sinag splits the work into tasks; tasks that change the same files go
+  together. The developer builds them one after another while the tester tests each finished one
+  straight away, so they work at the same time.
+- When every task is done, the whole suite runs once. **The run passes only when the tests pass**
+  — never on the model's word.
+- At the end, whoever worked last reports to you: what was done, what was verified and what
+  wasn't, what needs you, and a screenshot of the result when the project has a page to show.
+- **One run, several rounds.** Under the report, **Add another task to this run** continues the same
+  conversation, and History keeps it as one run.
+
+**Built-in expertise.** Every agent comes with a curated, security-reviewed set of skills it uses
+when the task calls for it:
+- **Engineering:** architecture and feature planning, test-first building, root-cause debugging,
+  and secure code by default (validated input, checked access to every record, safe queries,
+  indexes and no N+1, the right tests), on any stack and database.
+- **Design and motion:** craft checks against the generic "AI-made" look (spacing, type, corners,
+  states, contrast), UI motion, and expressive motion when a task needs it (animated characters,
+  3D, scroll-told pages), always with a still version for people who turn motion off.
 - **You see helper agents.** When an agent hands part of a job to a helper agent, the conversation
   says what job it got and shows every step it takes.
-- **Task by task.** The PM splits the work into tasks; tasks that change the same files go
-  together. The developer builds them one after another while **QA** tests each finished one
-  straight away, so the two work at the same time.
-- **Tester / QA** only tests, never codes: it runs the tests for what changed and the code linked
-  to it, and checks pages on desktop and phone for production-level UI/UX. A bug or a must-fix
-  opens a thread on that task, where QA and the developer sort it out (up to 3 rounds). Design
-  ideas that are nice-to-have come to you in the report instead.
-- **Designer** (with a subscription) only reviews, never codes: after the developer builds a task
-  that changes what you see, it looks at the running app on desktop and phone and checks layout,
-  type, colour, every state and the motion. What isn't right goes back to the developer (up to 3
-  rounds) before QA tests it. Its screenshots and verdicts are in the **Design** tab.
-- When every task is done, the whole suite runs once.
-- The run passes only when the tests pass — never on the model's word.
-- At the end, whoever worked last reports to you: QA on a tested run, the developer when it was
-  dev work only. The report says what was done, what was verified and what wasn't, what needs you,
-  and shows a screenshot of the result when the project has a page to show.
-- **One run, several rounds.** Under the report, **Add another task to this run** continues the same
-  conversation (talked through with the PM first), and History keeps it as one run.
 
-**Talk to one agent without stopping the team.**
-- Type **@Ray**, **@Tala** or **@Liwanag** (or **@PM**, **@Dev**, **@QA**) to open a side
+**Talk to one agent without stopping the team** (with a subscription).
+- Type **@Sinag**, **@Tala** or **@Liwanag** (or **@PM**, **@Dev**, **@QA**) to open a side
   conversation with that agent. Only it answers, it sees your screenshots, and the team keeps
   working. Reply in the thread to keep talking.
-- Side conversations have their own **Side chats** tab, so the run's conversation shows only the
-  run. Open one in a tab of its own, **Hide** it, or **Delete** it for good.
-- In a side conversation the **PM can write docs for you** (a summary of what was done, a README)
+- Side conversations have their own tab, so the run's conversation shows only the run. Open one in
+  a tab of its own, **Hide** it, or **Delete** it for good.
+- In a side conversation **Sinag can write docs for you** (a summary of what was done, a README)
   and **set up your project** (installing packages and similar setup commands). Each file and each
-  command asks for your OK first. App code stays with the developer, and the PM never touches
-  your `.env`: it writes `.env.example` and you fill in the values.
-- When the PM has a plan in the side conversation, one click sends it straight to the Developer
-  and QA, with no new planning round. If the team is busy, it goes into the **work queue** and
-  starts by itself when the current run is done.
-- The **work list** shows what is in progress, what's next, what's waiting and what's done,
-  including the queue and the messages you sent.
+  command asks for your OK first. App code stays with the developer, and Sinag never touches your
+  `.env`: she writes `.env.example` and you fill in the values.
+- When Sinag has a plan in the side conversation, one click sends it straight to the team. If the
+  team is busy, it goes into the **work queue** and starts by itself when the current run is done.
 
-**Command the running team.**
+**Command the running team** (with a subscription).
 - **Pause** or **Resume** one agent or the whole team. **Message** an agent from its card, from a
-  right-click on its card or its message, or from the Tasks tab ("the .env is updated, pull
-  first").
-- An **urgent** message stops the agent's current step, and it picks up again with your message
-  first.
-- Every message shows where it stands: **Waiting**, **on it**, **Done**. A message that wasn't
-  handled carries over into **Continue** or your next message.
-- **Stop testing** stops QA at once, even mid-test. Waiting messages still reach the developer
-  before the report, the PM tells you what QA didn't get to, and one click plans the next step with
-  the PM.
+  right-click on its card or its message, or from the Tasks tab ("the .env is updated, pull first").
+- An **urgent** message stops the agent's current step, and it picks up again with your message first.
+- Every message shows where it stands: **Waiting**, **on it**, **Done**.
+- **Stop testing** stops the tester at once, even mid-test; waiting messages still reach the
+  developer before the report.
 - Change the model, mode, effort or an agent's own settings during a run: they apply from the
   team's next step.
 
@@ -171,90 +203,64 @@ while Sinag is in use, and a new key adds its hours to what you have left.
 - After a run, just type a follow-up ("make the button bigger", "I found a bug on mobile").
   Each agent picks up exactly where it left off.
 - Forgot something while the team is working? Type it anyway: it reaches their next turn.
-- **The team remembers your project.** After the first run the PM keeps a short project brief
+- **The team remembers your project.** After the first run Sinag keeps a short project brief
   (stack, layout, how to test), so later runs start working instead of re-reading everything.
-- **New run** starts clean whenever you want a fresh start. Past runs stay in the project history.
 - **A run stopped?** Whether it hit an error, you pressed Stop, or you ran out of credits,
-  **Continue where it left off** picks it up again: finished tasks stay done and only the rest
-  is built.
-- **History** lists every run with its date, result, cost, screenshots and side questions; click
-  one to reopen that conversation.
-- **Enter** sends, **Shift+Enter** adds a new line. Paste or drop screenshots (up to 10),
-  even while the team is working: they go with your message and the next PM or developer turn
-  looks at them.
-- Attach **documents** (PDF, Markdown, text, CSV, JSON) and **videos** (MP4, WebM, MOV) too, in the
-  chat and side conversations. Agents read documents; Claude can't watch video, so the agent gets
-  the file's details and tells you so.
+  **Continue where it left off** picks it up again: finished tasks stay done.
+- Paste or drop screenshots (up to 10), documents (PDF, Markdown, text, CSV, JSON) and videos
+  (MP4, WebM, MOV), even while the team is working. Agents read documents; for a video they get
+  the file's details and tell you they can't watch it.
 
 **You stay in control.**
-- Agents ask you questions and permission right in the window, or in a small popup in the
-  corner when Sinag is behind other apps. Each request says in plain words what it will do,
-  and warns you when a command can delete or download things.
+- Agents ask you questions and permission right in the window, or in a small popup in the corner
+  when Sinag is behind other apps. Each request says in plain words what it will do, and warns you
+  when a command can delete or download things.
 - Modes: **Ask me** (edits run, other commands ask you), **Ask for everything**, **Auto**, or
-  **Plan only** (stop after the blueprint so you can review it).
+  **Plan only** (stop after the plan so you can review it).
 - A spend limit per run (switch it off for no limit), and automatic stops for an agent or test
-  that goes silent, protect your tokens. The **cost saver** gives each agent only the skills and model it needs, keeps the
-  PM's and developer's thinking at medium, and never re-runs tests that already passed. You can set
-  the model and effort of each agent yourself (Settings → Team & runs).
-- The developer runs install, test and your project's own check commands on its own; anything else
-  asks you. Risky commands (deleting files, pushing code, running downloaded code, sending data out)
-  always ask you first, in every mode.
+  that goes silent, protect your tokens. The **cost saver** gives each agent only the skills and
+  model it needs and never re-runs tests that already passed. Set each agent's model and effort
+  yourself in Settings → Team & runs.
+- Risky commands (deleting files, pushing code, running downloaded code, sending data out) always
+  ask you first, in every mode.
 - **Your secrets stay secret.** Keys and passwords go in `.env`, never in the code. No agent can
-  read or change `.env` or key files, and Sinag checks every change for leaked keys before it is
-  tested.
+  read or change `.env` or key files, and Sinag checks every change for leaked keys before it is tested.
 
 **Two ways to see it.**
-- The compact floating window, or the **Desktop view**, a full workspace for laptops and PCs:
-  projects on the left, the three agents with their current work, live activity, a terminal
-  with every command and its output, the changed files with their diffs, a preview of your page
-  and the message box, all on one screen. Hide or minimise any panel. Switch at any time
-  (**Ctrl+Shift+D**); a running team is never interrupted.
-- A clean header: **Pause** and **Stop** while the team runs, and everything else in one **⋯**
-  menu, grouped into Project and View.
-- A **Tests** tab shows every test the developer and QA run, live, with its output and whether it
-  passed. Turn it off with **Show test output** (Settings or the tab itself).
-- Three looks (Sinag, Aurora, Paper), each in light and dark.
+- The compact floating window, or the **Desktop view** (with a subscription): projects on the left,
+  the team with their current work, live activity, a terminal with every command and its output,
+  the changed files with their diffs, a preview of your page and the message box, on one screen.
+  Switch at any time (**Ctrl+Shift+D**); a running team is never interrupted.
+- A **Tests** tab shows every test the developer and tester run, live, with its output.
+- Styles: Sinag, Aurora and Paper, each in light and dark; with a subscription, **High Seas** (a
+  real old sea chart, wanted-poster cards and pirate icons) and **Grimoire** (a medieval spellbook
+  page, vellum cards with gold leaf), or any image from your PC behind frosted glass.
 - Shortcuts: **Ctrl+P** switch project, **Ctrl+Shift+P** commands, **Ctrl+K** write to the team.
 
 **Watch it work.**
-- Open a live window per agent to follow what each one is doing.
 - At least once a minute each agent says what it is doing right now: the file it is writing, the
   command it is running, or that it is thinking.
 - Several projects can run at the same time, each in its own tab.
-- The **Changes** view lists every file the team created or edited.
-- **Preview** opens your project's page inside Sinag.
-- **Watch replay** on QA's browser tests shows every step on desktop and phone, with a screenshot
-  of each click. Turn on "Show the browser while QA's browser tests run" (Settings → Team & runs)
-  to watch them live. Recording costs no tokens.
+- **Preview** opens your project's page inside Sinag. **Watch replay** on the tester's browser tests
+  shows every step on desktop and phone, with a screenshot of each click. Recording costs no tokens.
 - Copy any agent's message, code block, link or command with one click. With a subscription, the
   screenshots an agent looked at open with a click too.
-- Every action tells you what happened: a notice while it works, then done or the error.
 
-**Built-in expertise.** Agents come with a curated, security-reviewed set of engineering and
-design skills (animation, UI/UX, design systems and more) they use when the task calls for it.
-
-**With a subscription: Learn.** Switch to the Learn view (the button in the title bar, or
-Ctrl+Shift+L) and name what you want to learn. The PM plans a step-by-step path while you watch,
-each step with the idea, where it lives in a real project, a small task and questions to check
-yourself. Practise in a project of its own: ask the tester to check your work like a mentor, or
-let the team build a step and explain it. Your progress is kept, and you can add paths any time.
-
-**With a subscription: themes and your own wallpaper.** Make Sinag a pirate adventure (**High
-Seas**: a real old sea chart, wanted-poster cards and pirate icons) or a spellbook (**Grimoire**: a
-medieval grimoire page, vellum cards with gold leaf and spellbook icons), or put any image from
-your PC behind frosted glass. Settings → General.
+**With a subscription: Learn with Luna.** Switch to the Learn view (the title-bar button, or
+Ctrl+Shift+L) and say what you want to learn. **Luna**, your mentor, writes a step-by-step path while
+you watch, each step with the idea, where it lives in a real project, a small task and questions to
+check yourself. Practise in a folder of its own: ask Luna to check your work, fix it with you, or
+build a step and explain it. Your progress is kept, and a path is never lost if it stops halfway.
 
 **With a subscription: GitHub.** Connect a project to GitHub, pull a branch (you choose which,
 and conflicting local changes are set aside safely) and push your work, never forced. No tokens
 are used.
 
 **Also in the box:**
-- **Chat with Claude**, separate from the team, that can read the open project but never change it.
-- Always-on-top window you can pin or unpin, maximise, or hide to the system tray while a team keeps working.
+- **Chat with Sinag**, separate from the team, that can read the open project but never change it.
+- Always-on-top window you can pin, maximise, or hide to the system tray while a team keeps working.
 - A PIN to open the app (asked again after 24 hours, when you sign out, or with Lock now), optional
   start with Windows.
-- The title bar shows which version you are running.
-- Model, mode and effort choice, including every current Claude model and version (Settings → Team & runs).
 
 ## Security and privacy
 
@@ -264,13 +270,16 @@ are used.
   private work on a paid connection.
 - **Only genuine updates install.** Every update is signed, and Sinag refuses one that isn't.
   Licence keys are signed with a separate key that never leaves Chrys's PC.
-- **Agents are fenced in.** The PM and QA can only read. The developer edits and runs install, test
-  and check commands; anything else, and every risky command, asks you. No agent can read `.env` or
-  key files.
+- **Agents are fenced in.** The tester and the designer can only read. The developer edits and runs
+  install, test and check commands; anything else, and every risky command, asks you. No agent can
+  read `.env` or key files.
+- **Designs are locked down.** A mockup is a web page an AI wrote, so it opens in a window that
+  can't reach Sinag or your files, and it may load only a short list of pinned, well-known
+  libraries and fonts: Sinag removes every other outside address and the browser refuses anything else.
 - **Web access is checked.** Reading a page or searching runs on its own. Anything harmful (running
   downloaded code, sending your data or a login out, saving a downloaded file, connecting to another
   computer) asks you first, saying what it is and what will happen if you allow it.
-- **Every change is checked for secrets and XSS** before QA tests it, without using tokens.
+- **Every change is checked for secrets and XSS** before it is tested, without using tokens.
 - **Found a security problem?** Report it privately through the
   [Security tab](https://github.com/chrysanly/sinag-agents/security) (**Report a
   vulnerability**), not in a public issue.

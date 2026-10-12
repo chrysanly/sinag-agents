@@ -2,6 +2,37 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.11.0
+
+### New
+- **Sinag leads the team.** Sinag herself now talks the work through with you, writes the plan and
+  hands it to the team, in place of Ray. Ask her anything in a side conversation with **@Sinag**.
+  Your own names for the team still work.
+- **Sinag does small changes herself.** When a change is small, the plan says so and **Sinag does
+  this herself** starts ticked: she makes the change and runs your tests, with no other agent, so
+  it's quicker and uses fewer tokens. Untick it and the team does it.
+- **Bahaghari designs first.** For every task that changes what you see, Bahaghari now makes a
+  mockup of the finished screen before anything is built, in your project's own colours and fonts,
+  with screenshots on desktop and phone. **Approve** it, or type what to change and press **Change
+  it** for a new version. Tala builds to the design you approved, and Bahaghari checks the result
+  matches it before it's tested. (With a subscription.)
+- **Open live.** Open Bahaghari's mockup itself, not just its screenshots: hover, click, watch the
+  motion and resize it to phone width. It stays with the run, so it opens from History too.
+
+### Improved
+- **Sharper design and engineering skills.** Bahaghari and the team check every screen against
+  craft rules that avoid the generic "AI-made" look, use the right tool for animated characters, 3D
+  and scroll-told pages when a task needs them, and write secure code by default (checked input and
+  access, safe and fast queries, the right tests) on any stack.
+- **Mockups are locked down.** A mockup may only load a short list of trusted animation libraries
+  and Google Fonts. Everything else is blocked, so a design can't reach anything it shouldn't.
+- **Settings → Plan lists everything a subscription adds**, including the designer, Learn with
+  Luna, the extra styles and your own wallpaper.
+
+### Fixed
+- The Design tab scrolls again when it holds more reviews than fit.
+- Side Conversations no longer says "No questions in this run yet" while a question is waiting for you.
+
 ## 0.10.0
 
 ### New
