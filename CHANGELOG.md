@@ -2,6 +2,30 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.11.1
+
+### New
+- **The team works side by side.** Tala fixes what Liwanag or Bahaghari send back straight away,
+  while she builds the next task, so a bug never waits behind new work. Bahaghari designs the next
+  screens while she checks finished ones, and Tala builds whatever is ready instead of waiting for
+  a design to be approved.
+- **Choose which screens Bahaghari designs first.** The plan card lists every screen she would
+  design, each with its own switch. Turn one off and Tala builds it straight from the plan.
+
+### Improved
+- **Pause stops now.** Pausing an agent stops its current step at once instead of letting it
+  finish first. **Resume** carries on from exactly where it stopped, with nothing redone.
+- **The conversation shows the run you're on.** Earlier runs stay in History, so opening a project
+  or continuing a run is quick, with no long scroll to the bottom. Each project also remembers
+  where you were reading.
+
+### Fixed
+- **Continue where it left off no longer starts over.** Tasks that were already built go straight
+  to their check, a task sent back for a fix keeps what to fix, and designs you approved are built
+  without being designed or approved again. This saves a lot of usage when a run stops, for
+  example at your Claude usage limit.
+- What you and Sinag agreed is kept when a run continues.
+
 ## 0.11.0
 
 ### New
