@@ -51,7 +51,7 @@ to those parts before 3.0.0 remain available under it.
 
 ## Rust libraries
 
-The Windows build of Sinag compiles in these 296 crates. Where a crate offers a
+The Windows build of Sinag compiles in these 306 crates. Where a crate offers a
 choice of licences ("A OR B"), Sinag uses it under MIT where MIT is offered, otherwise under the
 first permissive licence listed.
 
@@ -84,6 +84,7 @@ The MPL-2.0 crates are used unmodified. Their source code is available at: [cssp
 | cc | 1.5.1 | MIT OR Apache-2.0 |
 | cfb | 0.7.3 | MIT |
 | cfg-if | 1.0.5 | MIT OR Apache-2.0 |
+| cipher | 0.4.4 | MIT OR Apache-2.0 |
 | cookie | 0.18.2 | MIT OR Apache-2.0 |
 | cpufeatures | 0.2.17 | MIT OR Apache-2.0 |
 | crc32fast | 1.5.2 | MIT OR Apache-2.0 |
@@ -92,6 +93,7 @@ The MPL-2.0 crates are used unmodified. Their source code is available at: [cssp
 | crypto-common | 0.1.7 | MIT OR Apache-2.0 |
 | cssparser-macros | 0.6.1 | MPL-2.0 |
 | cssparser | 0.36.0 | MPL-2.0 |
+| ct-codecs | 1.1.8 | MIT |
 | ctor-proc-macro | 0.0.7 | Apache-2.0 OR MIT |
 | ctor | 0.8.0 | Apache-2.0 OR MIT |
 | darling_core | 0.24.1 | MIT |
@@ -137,6 +139,7 @@ The MPL-2.0 crates are used unmodified. Their source code is available at: [cssp
 | hashbrown | 0.17.1 | MIT OR Apache-2.0 |
 | hashlink | 0.12.2 | MIT OR Apache-2.0 |
 | heck | 0.5.0 | MIT OR Apache-2.0 |
+| hmac | 0.12.1 | MIT OR Apache-2.0 |
 | html5ever | 0.38.0 | MIT OR Apache-2.0 |
 | http-body-util | 0.1.5 | MIT |
 | http-body | 1.1.0 | MIT |
@@ -159,6 +162,7 @@ The MPL-2.0 crates are used unmodified. Their source code is available at: [cssp
 | indexmap | 1.9.3 | Apache-2.0 OR MIT |
 | indexmap | 2.14.2 | Apache-2.0 OR MIT |
 | infer | 0.19.0 | MIT |
+| inout | 0.1.4 | MIT OR Apache-2.0 |
 | ipnet | 2.12.2 | MIT OR Apache-2.0 |
 | itoa | 1.0.18 | MIT OR Apache-2.0 |
 | json-patch | 3.0.1 | MIT OR Apache-2.0 |
@@ -172,6 +176,7 @@ The MPL-2.0 crates are used unmodified. Their source code is available at: [cssp
 | markup5ever | 0.38.0 | MIT OR Apache-2.0 |
 | memchr | 2.8.3 | Unlicense OR MIT |
 | mime | 0.3.17 | MIT OR Apache-2.0 |
+| minisign | 0.10.0 | MIT |
 | minisign-verify | 0.2.5 | MIT |
 | miniz_oxide | 0.8.9 | MIT OR Zlib OR Apache-2.0 |
 | miniz_oxide | 0.9.1 | MIT OR Zlib OR Apache-2.0 |
@@ -183,6 +188,7 @@ The MPL-2.0 crates are used unmodified. Their source code is available at: [cssp
 | option-ext | 0.2.0 | MPL-2.0 |
 | parking_lot_core | 0.9.12 | MIT OR Apache-2.0 |
 | parking_lot | 0.12.5 | MIT OR Apache-2.0 |
+| pbkdf2 | 0.12.2 | MIT OR Apache-2.0 |
 | percent-encoding | 2.3.2 | MIT OR Apache-2.0 |
 | phf_codegen | 0.13.1 | MIT |
 | phf_generator | 0.13.1 | MIT |
@@ -206,6 +212,8 @@ The MPL-2.0 crates are used unmodified. Their source code is available at: [cssp
 | reqwest | 0.13.5 | MIT OR Apache-2.0 |
 | rfd | 0.16.0 | MIT |
 | ring | 0.17.14 | Apache-2.0 AND ISC |
+| rpassword | 7.5.4 | Apache-2.0 |
+| rtoolbox | 0.0.6 | Apache-2.0 |
 | rusqlite | 0.40.2 | MIT |
 | rustc-hash | 2.1.3 | Apache-2.0 OR MIT |
 | rustc_version | 0.4.1 | MIT OR Apache-2.0 |
@@ -213,10 +221,12 @@ The MPL-2.0 crates are used unmodified. Their source code is available at: [cssp
 | rustls-platform-verifier | 0.7.1 | MIT OR Apache-2.0 |
 | rustls-webpki | 0.103.15 | ISC |
 | rustls | 0.23.45 | Apache-2.0 OR ISC OR MIT |
+| salsa20 | 0.10.2 | MIT OR Apache-2.0 |
 | same-file | 1.0.6 | Unlicense OR MIT |
 | schemars_derive | 0.8.22 | MIT |
 | schemars | 0.8.22 | MIT |
 | scopeguard | 1.2.0 | MIT OR Apache-2.0 |
+| scrypt | 0.11.0 | MIT OR Apache-2.0 |
 | selectors | 0.36.1 | MPL-2.0 |
 | semver | 1.0.28 | MIT OR Apache-2.0 |
 | serde-untagged | 0.1.9 | MIT OR Apache-2.0 |

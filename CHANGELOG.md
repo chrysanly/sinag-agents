@@ -2,6 +2,32 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.12.0
+
+### New
+- **Sinag sizes the team for each run.** Her plan says how many developers and designers the work
+  needs: one of each for most runs, more when the tasks are independent and big enough. Extra
+  developers build tasks at the same time, and extra designers design screens at the same time.
+  The plan card shows the team before you press Begin, and Continue keeps the same team.
+- **See what the team is doing right now.** A bar at the bottom of the conversation lists every
+  agent that is working or paused, with its task and current step. Click a row to jump to that
+  task.
+- **Bahaghari starts from what's already there.** Before designing, she looks at screenshots of the
+  screen as it is now and designs only what the task changes. When nothing needs a new design she
+  says so, and you approve building from what exists or ask her for a design. Every design card
+  shows what's there now next to the new design.
+- **Make subscriber keys in Sinag (owner).** Settings → Plan can make a key for hours of use, or for
+  days, weeks, months or years, on the PC that holds the signing key.
+
+### Improved
+- **Testing waits until the building is done.** Liwanag starts testing once every task is built and
+  through its design check, so no test time is spent on code that is still changing. This uses
+  less of your usage limit.
+
+### Fixed
+- **A paused agent no longer looks busy.** Its bubble says it's paused, with no typing dots, until
+  you resume it.
+
 ## 0.11.1
 
 ### New
