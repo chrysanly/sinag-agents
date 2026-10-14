@@ -2,6 +2,15 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.12.2
+
+### Fixed
+- **Only your approval sends a design to Tala.** Ask Bahaghari for as many changes as you like:
+  she makes a new version each time, and Tala builds only the one you approve.
+- **You decide when a design doesn't come through.** If Bahaghari's step fails or brings no design,
+  you choose **Try again** (with anything you'd like her to do differently) or **Build from the
+  plan**, instead of Tala starting without asking.
+
 ## 0.12.1
 
 ### Fixed
