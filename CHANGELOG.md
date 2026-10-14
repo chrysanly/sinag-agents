@@ -2,6 +2,17 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.12.3
+
+### New
+- **Answer from the bar at the bottom.** When an agent is waiting for you, its row has **View
+  design** to jump to the design and **Answer** to reply right there: type what you want, add
+  screenshots, then choose. Close puts the question back in its task.
+
+### Fixed
+- **A stopped run no longer looks busy.** After Sinag restarts, or when a run ends without
+  finishing, no agent shows as working or waiting for you; press **Continue** to pick the run up.
+
 ## 0.12.2
 
 ### Fixed
