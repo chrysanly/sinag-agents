@@ -2,6 +2,15 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.12.4
+
+### Fixed
+- **Continue picks up the design where it stopped.** When a run stops in the middle of a design
+  (at your usage limit, say), Continue shows the version that was waiting for you again, without
+  designing it again. A change you asked for is made to Bahaghari's last version, and she remembers
+  every change you asked for, even on a new session or another account.
+- Tala builds only to a design you approved, never to an earlier draft.
+
 ## 0.12.3
 
 ### New
