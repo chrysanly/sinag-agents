@@ -2,6 +2,13 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.12.1
+
+### Fixed
+- **Making a subscriber key is clearer (owner).** Pick Hours, Days, Weeks, Months or Years, type how
+  many, and Sinag shows when the key ends before you make it. Every field fits the settings
+  window, and the password box is no longer cut off.
+
 ## 0.12.0
 
 ### New
