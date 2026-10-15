@@ -2,6 +2,22 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.13.2
+
+### Improved
+- **Follow-ups know what the last run learned.** When you keep going in the same conversation, Sinag
+  and the team now hear what the brain gained since they last read it (new notes, lookups, what
+  changed), and only that, so a follow-up never works from an out-of-date picture and pays no
+  tokens for what they already know.
+- **The brain comes first.** Every agent now reads what the brain knows before its task, and checks
+  it before opening files or searching the web, so less of your usage goes on finding things the
+  team already knows.
+
+### Fixed
+- **No more error text in the conversation after an urgent message.** Sending an urgent message
+  while an agent was waiting for your answer could leave a technical error block in the
+  conversation. Nothing was lost; it no longer shows.
+
 ## 0.13.1
 
 ### Improved
