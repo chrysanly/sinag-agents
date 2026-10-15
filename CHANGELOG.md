@@ -2,6 +2,19 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.13.1
+
+### Improved
+- **Testing starts as soon as a task is built.** Liwanag tests each task the moment Tala finishes
+  it, while Tala builds the next, then tests everything together once all of it is built. You see
+  problems sooner and runs finish faster. If Tala later changes something a tested task uses, it is
+  tested again.
+- **Bahaghari designs the next screen while you decide.** While one design waits for your answer,
+  she starts the next, so you may have more than one design to look at. Each says which task and
+  version it is.
+- **Designs never show empty boxes.** Bahaghari fills photos with real example images and marks
+  what you will supply (a logo, an ad) with labelled placeholders.
+
 ## 0.13.0
 
 ### New
