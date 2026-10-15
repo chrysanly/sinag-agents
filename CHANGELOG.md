@@ -2,6 +2,38 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.13.0
+
+### New
+- **The project brain.** Sinag now keeps a brain for each project: what it is, how it works, its
+  stack and database, the key code, the look and conventions it settled on, and what the team
+  already looked up on the web. Every agent starts from it and checks it before searching the code
+  or the web, so runs spend fewer tokens finding their way around. Sinag writes it on the first
+  run and updates only what changed after each run. It lives in your project, so it travels with
+  your code.
+- **See the brain.** A new **Brain** view draws it as a living map: your project in the middle,
+  each part of the brain around it, and every note as a star, linked to the notes that mention the
+  same thing. Hover to trace the links, click a note to read it, drag, zoom and pan. While the team
+  works you can watch who is reading, looking things up and storing new notes, and see the brain
+  grow.
+- **Watch Liwanag test.** With **Watch the tests** on, Liwanag's browser tests open on screen,
+  slowed down and one at a time, and Sinag says what she is doing at each step ("Fill in the
+  email", "Checking the error shows").
+- **Open live from the bar at the bottom.** When a design waits for you, its row can open the
+  design itself.
+- Bahaghari knows where to look for design ideas (motion, landing pages, app flows, components)
+  before she designs a new kind of screen.
+
+### Improved
+- **A much bigger free trial.** 10 team runs instead of 1, and chat messages for the whole hour. A
+  run only counts once the team starts building: saying hi, talking it through with Sinag or
+  discarding a plan is free.
+
+### Fixed
+- **Approving a design no longer throws away the version you shaped.** When you ask for a change
+  that needs no new drawing, the version you were working on stays, with Bahaghari's note on how to
+  build it. Each design card also says which task and version it is for.
+
 ## 0.12.4
 
 ### Fixed

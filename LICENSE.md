@@ -8,7 +8,8 @@ using it you agree to these terms. If you don't agree, don't install or use it.
 ## 1. What you may do
 
 - **Free trial.** You may install the Software and use it within the trial's limits (one hour of
-  use, 1 team run, 10 chat messages and 2 projects; the Desktop view, team commands, @ side
+  use, 10 team runs (a run counts once the team starts building), chat messages for the whole hour
+  and 2 projects; the Desktop view, team commands, @ side
   conversations and / commands are not included).
 - **With a key.** A subscription key issued by Chrys lets you use the Software for the hours or
   days it was issued for, on the PC it was issued for (a key tied to one PC works only on that PC).
