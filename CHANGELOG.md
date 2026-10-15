@@ -2,6 +2,27 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.14.0
+
+### New
+- **The team sits around the brain.** In the Brain view, Sinag, Tala, Bahaghari and Liwanag each
+  have a seat. When one of them reads the brain, stores something in it or looks something up, their
+  seat lights up and a line runs to the part of the brain they used.
+- **Agents add what they learn.** When an agent finds something the brain didn't have (where
+  something lives, a gotcha, what broke and how it was fixed), it stores it in the brain straight
+  away, so the next agent already knows it.
+- **See the skills in use.** Each seat shows the kit skills its agent loaded this run, and the Live
+  list says who used which skill.
+
+### Improved
+- **Every step shows its brain read.** Even when nothing changed since an agent last read the brain,
+  the Brain view now shows it checked ("nothing new since last time").
+- **Laravel projects open the right way.** Sinag now checks what kind of project it is first. A
+  Laravel app is opened at its Laravel Herd address (like `myapp.test`), or with `php artisan serve`,
+  instead of `npm run dev`.
+- **No Claude co-author line on commits.** Commits and pull requests your team makes never carry a
+  "Co-Authored-By: Claude" line, whatever the Claude Code settings on that PC.
+
 ## 0.13.2
 
 ### Improved
