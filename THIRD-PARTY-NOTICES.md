@@ -12,6 +12,7 @@ not Sinag's, apply to those components.
 | Python (the agents' runtime, official embeddable build) | 3.14.0 | PSF License Agreement | [python.org](https://www.python.org/) · full text in `pythonLICENSE.txt` in Sinag's install folder |
 | SQLite (via rusqlite / libsqlite3-sys) | bundled | Public domain | [sqlite.org](https://www.sqlite.org/copyright.html) |
 | Rive web runtime (`@rive-app/canvas`) | 2.43.1 | MIT, Copyright (c) Rive | [github.com/rive-app/rive-wasm](https://github.com/rive-app/rive-wasm) |
+| three.js (`three`, with its OrbitControls) | 0.186.1 | MIT, Copyright (c) 2010-2026 three.js authors | [github.com/mrdoob/three.js](https://github.com/mrdoob/three.js) |
 | Rust libraries | see the list below | MIT, Apache-2.0 and others | [crates.io](https://crates.io/) |
 | Rye typeface (High Seas theme titles), Copyright (c) 2011 Sorkin Type Co, Reserved Font Name "Rye" | 1.x | SIL Open Font License 1.1 · full text in `themes/Rye-OFL.txt` in Sinag's install folder | [fonts.google.com/specimen/Rye](https://fonts.google.com/specimen/Rye) |
 | *Carta Marina* by Olaus Magnus, 1539 (High Seas theme background, resized) | — | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Carta_Marina.jpeg) |

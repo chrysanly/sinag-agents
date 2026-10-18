@@ -2,6 +2,22 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.15.0
+
+### New
+- **Tasks in the right order.** Sinag can now say one task needs another finished first, and the
+  developers wait for it instead of building on work that isn't there yet.
+- **The developer says what it finished.** At the end of each task the developer lists what it
+  changed and whether it worked. Sinag checks that list against the files that really changed and
+  tells the tester about anything that doesn't match. Pass or fail still comes from your tests.
+
+### Improved
+- **Simpler tests.** The developer writes one short test per thing a task must do, and the tester
+  adds only the fewest checks that cover it, so runs spend less of your usage on tests.
+- **Your secrets stay private everywhere.** Keys, passwords and secret files stay out of reach
+  in chat, Learn and Luna too, and also through commands the team is allowed to run (for example
+  printing a file), not only through reading files.
+
 ## 0.14.0
 
 ### New
