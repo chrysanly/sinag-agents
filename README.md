@@ -26,7 +26,10 @@ up to date from this page afterwards.
    to the team instead.
 4. **The designer designs first** (with a subscription). For every task that changes what you see,
    **Bahaghari** makes a real mockup of the screen, on desktop and phone. You **Approve** it or say
-   what to change, and open it live to try its hover and motion. Nothing is built before you approve.
+   what to change, and open it live to try its hover and motion. Each task is built as soon as its
+   own design is approved, so one design you send back never holds up the rest. Want every screen
+   settled first? Turn on **Design first** under the box: you talk it through with Sinag, Bahaghari
+   designs every screen, and nothing is built until you have approved them all.
 5. **The developer builds it, the tester tests it.** **Tala** builds each task to match the design;
    Bahaghari checks the result looks like the mockup; **Liwanag** tests that it works, on desktop
    and phone. Rename any of them in **Settings → Team & runs**.
@@ -59,8 +62,10 @@ never stops the run.
   <img src="docs/screenshots/aside.png" width="330" alt="A side conversation with Sinag: the question, her two-task answer, and the link that sends it to the team">
 </p>
 
-**Every design, kept.** The **Design** tab shows each mockup and each review of what was built,
-with the screenshots, and the app Sinag started for the designer.
+**Every design, kept.** Every version Bahaghari makes is kept in your project, across runs, approved
+or not. The **Design** tab lists them by name: click one to open it, click its folder to show it in
+Explorer, or delete the ones you no longer need to save space. It also shows each review of what was
+built, with the screenshots, and the app Sinag started for the designer.
 
 <p align="center">
   <img src="docs/screenshots/design-tab.png" width="820" alt="The Design tab: the app running, the mockup with Open live, and the designer's review of the build, Looks right">
@@ -145,8 +150,9 @@ already has (the installer adds it if it's missing).
   Bahaghari makes a mockup of the finished screen in your project's own colours, fonts and
   components, with its states and motion, and screenshots it on desktop and phone. **Open live**
   opens the real mockup so you can hover, click and resize it. **Approve** it, or type what to
-  change (a screenshot helps) and press **Change it** for a new version. The developer builds to
-  the approved design, Bahaghari checks the result matches (up to 3 rounds), and only then is it
+  change (a screenshot helps) and press **Change it** for a new version. Versions keep counting
+  across runs, and the project's brain notes what was designed, approved and sent back. The
+  developer starts a task as soon as its design is approved, builds to it, Bahaghari checks the result matches (up to 3 rounds), and only then is it
   tested. Small visual tweaks don't need a mockup; Sinag can do those herself.
 - **Developer**, a senior full-stack engineer, builds it in your project folder the way your stack
   is meant to be written, and writes the unit tests and (for websites) the browser tests at

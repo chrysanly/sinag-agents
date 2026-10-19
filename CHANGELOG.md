@@ -2,6 +2,60 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.15.3
+
+### New
+- **Every design, kept and yours to manage.** Each version Bahaghari makes is now kept in your
+  project, across runs, approved or not, and the numbering carries on (v11 after v10). The
+  **Design** tab lists them by name: click one to open it, click its folder to show it in Explorer,
+  or delete a version or a whole page to save space.
+- **Design first, when you want it.** A **Design first** switch under the box: you talk it through
+  with Sinag, Bahaghari designs every screen, and nothing is built until you have approved them all.
+  Sinag then reads the approved designs, hands the work to the developer (and the tester), and
+  Bahaghari checks the build matches.
+- **The brain remembers the designs.** What was designed, what you approved and what you sent back
+  is noted in the project's brain.
+
+### Improved
+- **No waiting on other designs.** Each task is built as soon as its own design is approved, so one
+  design you send back no longer holds up the others.
+
+### Fixed
+- **A pasted image stays where you pasted it.** Pasting an image into an answer or a reply no longer
+  adds it to the main box as well.
+
+## 0.15.2
+
+### Improved
+- **Sinag reads your messages first.** A message you send the team while it builds goes to Sinag,
+  not to whoever happens to work next. She hands each one to the right person: a change to a task
+  not started yet becomes part of it, a check goes to the tester, and anything else becomes a new
+  task of its own (designed first when it changes what you see). A question she can answer, she
+  answers.
+- **Done means done.** A message is marked done by Sinag once the task it went to passes, not
+  when an agent's step that read it ends.
+
+### Fixed
+- **No internet, no lost run.** When the connection drops in the middle of a step, the team
+  waits for it to come back and carries on where it stopped, with everything you sent. After an
+  hour without internet the run stops, and Continue picks it up with your messages.
+
+## 0.15.1
+
+### Improved
+- **Designs come first.** When a run has screens to design, nothing is built until you have
+  approved every design, so a change you ask for never lands on work that's already done.
+- **Designs look like your site now.** The designer starts from the page exactly as it shows
+  today, with its real styles, even sections far down the page. Only what the task changes looks
+  different.
+
+### Fixed
+- **Finished work no longer stops as "no activity".** When the developer had started the app's
+  dev server, a finished step could sit for 5 minutes and then stop the run, using up tokens and
+  losing the result. The step now ends as soon as the developer's answer is in.
+- **You always approve the designs.** The owner setting is now "Sinag approves plans": Sinag
+  can start the plan for you, but every design waits for your Approve.
+
 ## 0.15.0
 
 ### New
