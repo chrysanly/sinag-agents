@@ -2,6 +2,13 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.15.4
+
+### Fixed
+- **Secret files can't be sent out.** A command that would send a secret file's contents to a web
+  address (for example a `.env` file attached to an upload) is now caught like any other attempt to
+  read it, for every agent.
+
 ## 0.15.3
 
 ### New
