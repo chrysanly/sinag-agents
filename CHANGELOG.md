@@ -2,6 +2,11 @@
 
 Sinag shows the newest section before it updates (Settings → **What's new**) and once after.
 
+## 0.15.5
+
+### Improved
+- **Behind the scenes.** Groundwork for upcoming features. Nothing changes in how you use Sinag.
+
 ## 0.15.4
 
 ### Fixed
